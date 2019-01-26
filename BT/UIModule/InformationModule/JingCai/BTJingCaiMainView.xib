@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BTJingCaiMainView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="167" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-lV-ZrU" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="34"/>
+                    <color key="backgroundColor" red="0.81800672740000002" green="0.60750325520000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="agA-ol-CCe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="竞猜中">
+                        <color key="titleColor" red="0.062745098039215685" green="0.55686274509803924" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="jingcaizhong"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-nA-EnN">
+                    <rect key="frame" x="60.5" y="34" width="40" height="2"/>
+                    <color key="backgroundColor" red="0.062745098040000002" green="0.5568627451" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="IF8-Pt-a5Q"/>
+                        <constraint firstAttribute="height" constant="1.5" id="b02-UA-JBs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="167" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWE-J5-n89" customClass="BTButton">
+                    <rect key="frame" x="160" y="0.0" width="160" height="34"/>
+                    <color key="backgroundColor" red="1" green="0.75686274509999996" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="CQY-UY-M8k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="已开奖">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="yikaijiang"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnQ-W9-YU9">
+                    <rect key="frame" x="220" y="34" width="40" height="2"/>
+                    <color key="backgroundColor" red="0.062745098040000002" green="0.5568627451" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="D0G-rM-IWu"/>
+                        <constraint firstAttribute="height" constant="1.5" id="QMY-td-bAZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mT1-lV-ZrU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="35j-J8-w6s"/>
+                <constraint firstItem="Uci-nA-EnN" firstAttribute="centerX" secondItem="mT1-lV-ZrU" secondAttribute="centerX" id="6ah-0T-17u"/>
+                <constraint firstItem="MWE-J5-n89" firstAttribute="leading" secondItem="mT1-lV-ZrU" secondAttribute="trailing" id="AWt-12-ZlU"/>
+                <constraint firstItem="MWE-J5-n89" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C4m-QF-405"/>
+                <constraint firstAttribute="trailing" secondItem="MWE-J5-n89" secondAttribute="trailing" id="HTT-6m-v9I"/>
+                <constraint firstItem="AnQ-W9-YU9" firstAttribute="centerX" secondItem="MWE-J5-n89" secondAttribute="centerX" id="KnX-zA-Opt"/>
+                <constraint firstItem="mT1-lV-ZrU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Np2-4q-0Xe"/>
+                <constraint firstItem="Uci-nA-EnN" firstAttribute="top" secondItem="mT1-lV-ZrU" secondAttribute="bottom" id="P9q-yw-dUK"/>
+                <constraint firstItem="mT1-lV-ZrU" firstAttribute="width" secondItem="MWE-J5-n89" secondAttribute="width" id="crR-z2-Ovj"/>
+                <constraint firstItem="AnQ-W9-YU9" firstAttribute="top" secondItem="MWE-J5-n89" secondAttribute="bottom" id="lok-Ix-an9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dfBtn" destination="MWE-J5-n89" id="dLa-ZX-iM4"/>
+                <outlet property="dfIndicator" destination="AnQ-W9-YU9" id="cTK-qP-dNJ"/>
+                <outlet property="zfBtn" destination="mT1-lV-ZrU" id="Tn8-54-ref"/>
+                <outlet property="zfIndicator" destination="Uci-nA-EnN" id="yUm-QJ-D9o"/>
+            </connections>
+        </view>
+    </objects>
+</document>

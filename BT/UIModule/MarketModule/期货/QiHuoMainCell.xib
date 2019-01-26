@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QiHuoMainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwc-5e-lv9">
+                        <rect key="frame" x="12" y="10" width="296" height="83.5"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xukuang" translatesAutoresizingMaskIntoConstraints="NO" id="3cp-Sy-4Yf">
+                                <rect key="frame" x="0.0" y="0.0" width="296" height="83.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h49-Lx-2Vh" customClass="BTLabel">
+                                <rect key="frame" x="265" y="52" width="16" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="uNG-0u-V5Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合约名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-wd-CAe" customClass="BTLabel">
+                                <rect key="frame" x="15" y="52" width="61.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="uoT-LI-oQI"/>
+                                    <constraint firstAttribute="width" constant="61.5" id="xJm-Ps-jQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localText" value="heyuemingcheng"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="CME BITcoin Futures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiD-Ko-0vJ" customClass="BTLabel">
+                                <rect key="frame" x="78" y="52" width="115.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="4Qe-PM-WdG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-uf-54F" customClass="BTLabel">
+                                <rect key="frame" x="15" y="20" width="39" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="RKZ-Y5-uCb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.12549019610000001" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品代码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5x-oS-OjC" customClass="BTLabel">
+                                <rect key="frame" x="203.5" y="52" width="61.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="FLm-iZ-p49"/>
+                                    <constraint firstAttribute="width" constant="61.5" id="lRs-AJ-SQa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localText" value="changpingdaima"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dIT-uf-54F" firstAttribute="top" secondItem="wwc-5e-lv9" secondAttribute="top" constant="20" id="10j-Z3-Hnc"/>
+                            <constraint firstItem="h49-Lx-2Vh" firstAttribute="leading" secondItem="v5x-oS-OjC" secondAttribute="trailing" id="8HR-9I-h5H"/>
+                            <constraint firstItem="v5x-oS-OjC" firstAttribute="centerY" secondItem="JiD-Ko-0vJ" secondAttribute="centerY" id="8wn-rM-fbX"/>
+                            <constraint firstItem="IC0-wd-CAe" firstAttribute="top" secondItem="dIT-uf-54F" secondAttribute="bottom" constant="10" id="O5W-hy-BgU"/>
+                            <constraint firstItem="dIT-uf-54F" firstAttribute="leading" secondItem="wwc-5e-lv9" secondAttribute="leading" constant="15" id="ST1-Ub-iWZ"/>
+                            <constraint firstAttribute="bottom" secondItem="3cp-Sy-4Yf" secondAttribute="bottom" id="T71-Md-543"/>
+                            <constraint firstItem="h49-Lx-2Vh" firstAttribute="centerY" secondItem="v5x-oS-OjC" secondAttribute="centerY" id="WuY-VQ-H2N"/>
+                            <constraint firstItem="JiD-Ko-0vJ" firstAttribute="centerY" secondItem="IC0-wd-CAe" secondAttribute="centerY" id="XY7-n3-1pd"/>
+                            <constraint firstItem="JiD-Ko-0vJ" firstAttribute="leading" secondItem="IC0-wd-CAe" secondAttribute="trailing" constant="2" id="dPi-eu-ogo"/>
+                            <constraint firstAttribute="trailing" secondItem="3cp-Sy-4Yf" secondAttribute="trailing" id="esb-Hk-Ivm"/>
+                            <constraint firstItem="v5x-oS-OjC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JiD-Ko-0vJ" secondAttribute="trailing" constant="10" id="iya-Km-3Ym"/>
+                            <constraint firstAttribute="trailing" secondItem="h49-Lx-2Vh" secondAttribute="trailing" constant="15" id="j6F-Lq-zy5"/>
+                            <constraint firstItem="3cp-Sy-4Yf" firstAttribute="top" secondItem="wwc-5e-lv9" secondAttribute="top" id="jQk-jV-TwG"/>
+                            <constraint firstItem="IC0-wd-CAe" firstAttribute="leading" secondItem="wwc-5e-lv9" secondAttribute="leading" constant="15" id="oi6-cB-qTg"/>
+                            <constraint firstItem="3cp-Sy-4Yf" firstAttribute="leading" secondItem="wwc-5e-lv9" secondAttribute="leading" id="vq6-8A-U3A"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wwc-5e-lv9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Gbs-EI-fzL"/>
+                    <constraint firstItem="wwc-5e-lv9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Lzd-UB-QMR"/>
+                    <constraint firstAttribute="bottom" secondItem="wwc-5e-lv9" secondAttribute="bottom" id="bBw-95-NOl"/>
+                    <constraint firstAttribute="trailing" secondItem="wwc-5e-lv9" secondAttribute="trailing" constant="12" id="flr-HC-sAT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="wwc-5e-lv9" id="u2h-lN-GBs"/>
+                <outlet property="heyuemingchengL" destination="JiD-Ko-0vJ" id="qoO-5C-P3P"/>
+                <outlet property="titleL" destination="dIT-uf-54F" id="ofK-4f-DWu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="xukuang" width="351" height="175"/>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentDetailFootView">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit-74" translatesAutoresizingMaskIntoConstraints="NO" id="sVk-5M-K7h">
+                    <rect key="frame" x="12" y="29.5" width="18" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="8Va-jY-Cfn"/>
+                        <constraint firstAttribute="width" constant="18" id="GUN-9w-hlf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcT-Bu-wdU">
+                    <rect key="frame" x="0.0" y="0.0" width="442" height="0.5"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="tCb-EJ-QDH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHv-Pa-zdg" customClass="BTButton">
+                    <rect key="frame" x="362" y="0.5" width="80" height="78.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="siB-8x-9My"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="fasong"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqd-5q-A2l" customClass="BTLabel">
+                    <rect key="frame" x="40" y="17" width="36" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localText" value="youhegaojian"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRo-I4-1uD">
+                    <rect key="frame" x="40" y="1.5" width="322" height="77.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WHv-Pa-zdg" secondAttribute="trailing" id="4Dh-XR-jKD"/>
+                <constraint firstItem="sVk-5M-K7h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="4IW-bX-5iY"/>
+                <constraint firstItem="WHv-Pa-zdg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="0.5" id="A8n-nf-5bF"/>
+                <constraint firstAttribute="bottom" secondItem="YRo-I4-1uD" secondAttribute="bottom" id="Flo-EQ-Aym"/>
+                <constraint firstItem="WHv-Pa-zdg" firstAttribute="leading" secondItem="YRo-I4-1uD" secondAttribute="trailing" id="GJ7-w1-aXR"/>
+                <constraint firstItem="mcT-Bu-wdU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M2M-xm-phF"/>
+                <constraint firstItem="sVk-5M-K7h" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mwc-a5-Eh3"/>
+                <constraint firstItem="YRo-I4-1uD" firstAttribute="leading" secondItem="sVk-5M-K7h" secondAttribute="trailing" constant="10" id="e1D-Wc-4DW"/>
+                <constraint firstItem="mcT-Bu-wdU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hkX-M1-W75"/>
+                <constraint firstAttribute="bottom" secondItem="WHv-Pa-zdg" secondAttribute="bottom" id="jpc-yb-AOV"/>
+                <constraint firstItem="YRo-I4-1uD" firstAttribute="top" secondItem="mcT-Bu-wdU" secondAttribute="bottom" constant="1" id="npl-K5-Fye"/>
+                <constraint firstAttribute="trailing" secondItem="mcT-Bu-wdU" secondAttribute="trailing" id="xrx-T4-u48"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="YRo-I4-1uD" id="7WG-CB-RAV"/>
+                <outlet property="fasongBtn" destination="WHv-Pa-zdg" id="IHw-1P-zyu"/>
+                <outlet property="imageViewEdit" destination="sVk-5M-K7h" id="g8m-mS-WIx"/>
+                <outlet property="placeL" destination="rqd-5q-A2l" id="kKa-VU-ysh"/>
+                <outlet property="textV" destination="YRo-I4-1uD" id="d8e-1s-MQo"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="76.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit-74" width="18" height="20"/>
+    </resources>
+</document>

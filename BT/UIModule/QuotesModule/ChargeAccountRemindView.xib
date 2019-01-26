@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChargeAccountRemindView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ll1-70-kl9">
+                    <rect key="frame" x="25" y="124" width="270" height="280"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tsAlart" translatesAutoresizingMaskIntoConstraints="NO" id="4or-ic-7Rx">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="113"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="113" id="dCY-YY-AGk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1BTC&gt;$9800.00了哦，赶紧去看看实时行情吧！哦哦哦哦哦哦哦哦哦哦哦哦" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA5-Nk-wEJ">
+                            <rect key="frame" x="30" y="122" width="210" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="gGg-VG-8rP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsu-iY-xhZ" customClass="BTButton">
+                            <rect key="frame" x="77" y="207" width="116" height="36"/>
+                            <color key="backgroundColor" red="0.058823529411764705" green="0.0" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="116" id="D53-SB-EEl"/>
+                                <constraint firstAttribute="height" constant="36" id="rDz-rh-kmm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="去看看">
+                                <color key="titleColor" red="0.97254901960784312" green="0.97254901960784312" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="qukankan"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6j-bh-xmh" customClass="BTLabel">
+                            <rect key="frame" x="102.5" y="50" width="65.5" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="2tu-Q3-Z6f"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localText" value="wenxintishi"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zA5-Nk-wEJ" secondAttribute="trailing" constant="30" id="4bG-VO-FcL"/>
+                        <constraint firstItem="4or-ic-7Rx" firstAttribute="leading" secondItem="Ll1-70-kl9" secondAttribute="leading" id="8ES-U9-CBQ"/>
+                        <constraint firstItem="R6j-bh-xmh" firstAttribute="centerX" secondItem="4or-ic-7Rx" secondAttribute="centerX" id="CGn-9g-FbB"/>
+                        <constraint firstAttribute="width" constant="270" id="EdR-kk-znR"/>
+                        <constraint firstItem="Hsu-iY-xhZ" firstAttribute="centerX" secondItem="Ll1-70-kl9" secondAttribute="centerX" id="Iop-Tt-TCU"/>
+                        <constraint firstAttribute="height" constant="280" id="RTP-RB-hfy"/>
+                        <constraint firstItem="4or-ic-7Rx" firstAttribute="top" secondItem="Ll1-70-kl9" secondAttribute="top" id="Rhe-mr-bUu"/>
+                        <constraint firstItem="zA5-Nk-wEJ" firstAttribute="top" secondItem="4or-ic-7Rx" secondAttribute="bottom" constant="9" id="WFp-pe-Lao"/>
+                        <constraint firstAttribute="bottom" secondItem="Hsu-iY-xhZ" secondAttribute="bottom" constant="37" id="jzg-Jb-CXm"/>
+                        <constraint firstAttribute="trailing" secondItem="4or-ic-7Rx" secondAttribute="trailing" id="pqb-rH-nUi"/>
+                        <constraint firstItem="zA5-Nk-wEJ" firstAttribute="leading" secondItem="Ll1-70-kl9" secondAttribute="leading" constant="30" id="sWL-Ht-h9a"/>
+                        <constraint firstItem="R6j-bh-xmh" firstAttribute="top" secondItem="Ll1-70-kl9" secondAttribute="top" constant="50" id="vls-qw-ts2"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DH-WE-kPe">
+                    <rect key="frame" x="135" y="454" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="0W2-aC-1U1"/>
+                        <constraint firstAttribute="height" constant="50" id="4j2-ut-TvB"/>
+                    </constraints>
+                    <state key="normal" image="homeClose"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0DH-WE-kPe" firstAttribute="centerX" secondItem="Ll1-70-kl9" secondAttribute="centerX" id="11a-fx-8cX"/>
+                <constraint firstItem="Ll1-70-kl9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="CB0-rX-QXM"/>
+                <constraint firstItem="0DH-WE-kPe" firstAttribute="top" secondItem="Ll1-70-kl9" secondAttribute="bottom" constant="50" id="K9a-rI-bWX"/>
+                <constraint firstItem="Ll1-70-kl9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NU0-YI-cCD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancellBtn" destination="0DH-WE-kPe" id="GGF-fU-l5S"/>
+                <outlet property="contentL" destination="zA5-Nk-wEJ" id="dHD-Rd-Eik"/>
+                <outlet property="goDetailBtn" destination="Hsu-iY-xhZ" id="NEP-HX-JCz"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeClose" width="34" height="34"/>
+        <image name="tsAlart" width="270" height="113"/>
+    </resources>
+</document>

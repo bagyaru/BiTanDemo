@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BTPingjiViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etherscan币种评级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFg-G7-vYK" customClass="BTLabel">
+                        <rect key="frame" x="15" y="13.5" width="122" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.070588235294117646" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fixText" value="EtherscanPingji"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXK-uG-TV8">
+                        <rect key="frame" x="137" y="9" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="sjF-3V-9yO"/>
+                            <constraint firstAttribute="width" constant="26" id="tH1-9L-1SD"/>
+                        </constraints>
+                        <state key="normal" image="ic_tishi.png"/>
+                        <connections>
+                            <action selector="click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jwj-C5-kDQ"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w98-c8-vgf" customClass="XHStarRateView">
+                        <rect key="frame" x="195" y="14" width="110" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="goY-k1-PNT"/>
+                            <constraint firstAttribute="height" constant="16" id="uPW-03-e2z"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="numberStar">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="foregroundStarImage" value="ic_xingxing01"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundStarImage" value="ic_xingxing02"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="w98-c8-vgf" secondAttribute="trailing" constant="15" id="4ci-WD-sNt"/>
+                    <constraint firstItem="aXK-uG-TV8" firstAttribute="centerY" secondItem="HFg-G7-vYK" secondAttribute="centerY" id="Lde-dB-6pD"/>
+                    <constraint firstItem="w98-c8-vgf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nen-xr-TT2"/>
+                    <constraint firstItem="HFg-G7-vYK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cl9-cX-VAS"/>
+                    <constraint firstItem="HFg-G7-vYK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ma3-qy-Ilg"/>
+                    <constraint firstItem="aXK-uG-TV8" firstAttribute="leading" secondItem="HFg-G7-vYK" secondAttribute="trailing" id="xIs-Bq-4qa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rateView" destination="w98-c8-vgf" id="ifc-GS-jiI"/>
+                <outlet property="tsBtn" destination="aXK-uG-TV8" id="W1t-h4-28Z"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="-42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_tishi.png" width="17" height="17"/>
+    </resources>
+</document>

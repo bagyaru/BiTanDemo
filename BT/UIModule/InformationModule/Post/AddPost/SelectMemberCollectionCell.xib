@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectMemberCollectionCell" id="gTV-IL-0wX" customClass="SelectMemberCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="86" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZa-bS-bVG">
+                        <rect key="frame" x="0.0" y="0.0" width="86" height="93"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-ft-kRJ">
+                                <rect key="frame" x="25" y="11" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="3AC-1q-KTp"/>
+                                    <constraint firstAttribute="height" constant="36" id="ITC-fa-Bjg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufv-p6-s66">
+                                <rect key="frame" x="5" y="53" width="76" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="AlE-l4-XkD">
+                                <rect key="frame" x="66" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2Wq-MU-o8L"/>
+                                    <constraint firstAttribute="height" constant="20" id="T8N-4i-RQy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rp9-ft-kRJ" firstAttribute="centerX" secondItem="iZa-bS-bVG" secondAttribute="centerX" id="3Iu-2G-Oxh"/>
+                            <constraint firstAttribute="trailing" secondItem="AlE-l4-XkD" secondAttribute="trailing" id="4dj-DL-GDc"/>
+                            <constraint firstAttribute="trailing" secondItem="ufv-p6-s66" secondAttribute="trailing" constant="5" id="Fcg-DL-1co"/>
+                            <constraint firstItem="rp9-ft-kRJ" firstAttribute="top" secondItem="iZa-bS-bVG" secondAttribute="top" constant="11" id="Pr7-Mu-Tob"/>
+                            <constraint firstItem="AlE-l4-XkD" firstAttribute="top" secondItem="iZa-bS-bVG" secondAttribute="top" id="TOt-Kg-Vjz"/>
+                            <constraint firstItem="ufv-p6-s66" firstAttribute="leading" secondItem="iZa-bS-bVG" secondAttribute="leading" constant="5" id="pno-Ht-vwb"/>
+                            <constraint firstItem="ufv-p6-s66" firstAttribute="top" secondItem="rp9-ft-kRJ" secondAttribute="bottom" constant="6" id="tTl-fb-JzG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iZa-bS-bVG" secondAttribute="bottom" id="1eH-qg-vDT"/>
+                <constraint firstItem="iZa-bS-bVG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8M1-Eu-Al7"/>
+                <constraint firstItem="iZa-bS-bVG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gc3-DS-slu"/>
+                <constraint firstAttribute="trailing" secondItem="iZa-bS-bVG" secondAttribute="trailing" id="rrA-r0-xEv"/>
+            </constraints>
+            <size key="customSize" width="86" height="93"/>
+            <connections>
+                <outlet property="bgView" destination="iZa-bS-bVG" id="8Fq-ID-FvF"/>
+                <outlet property="memberHeadImg" destination="rp9-ft-kRJ" id="eYY-wj-QCz"/>
+                <outlet property="nameL" destination="ufv-p6-s66" id="9z2-j5-Agj"/>
+            </connections>
+            <point key="canvasLocation" x="-32" y="18.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete_user.png" width="20" height="20"/>
+    </resources>
+</document>

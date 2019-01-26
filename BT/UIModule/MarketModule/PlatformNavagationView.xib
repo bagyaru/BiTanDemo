@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlatformNavagationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="189" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQb-UG-pIH" customClass="BTButton">
+                    <rect key="frame" x="160" y="0.0" width="160" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <state key="normal" title="期货">
+                        <color key="titleColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="qihuo"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8U-EV-tHR">
+                    <rect key="frame" x="232.5" y="42" width="15" height="2"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="jhS-Yf-MaX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haj-tr-4Ka">
+                    <rect key="frame" x="72.5" y="42" width="15" height="2"/>
+                    <color key="backgroundColor" red="0.12549019607843137" green="0.12941176470588234" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="iVz-jU-ObO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="188" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlS-c0-kJj" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="现货">
+                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="xianhuo"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dQb-UG-pIH" secondAttribute="bottom" constant="3" id="1GK-cf-rKE"/>
+                <constraint firstAttribute="bottom" secondItem="rlS-c0-kJj" secondAttribute="bottom" constant="3" id="225-kK-h6L"/>
+                <constraint firstItem="rlS-c0-kJj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3aF-IV-twF"/>
+                <constraint firstAttribute="bottom" secondItem="o8U-EV-tHR" secondAttribute="bottom" id="81s-iQ-LAU"/>
+                <constraint firstItem="haj-tr-4Ka" firstAttribute="top" secondItem="rlS-c0-kJj" secondAttribute="bottom" constant="1" id="CcZ-3r-PPC"/>
+                <constraint firstAttribute="bottom" secondItem="haj-tr-4Ka" secondAttribute="bottom" id="ELb-gj-wWi"/>
+                <constraint firstItem="dQb-UG-pIH" firstAttribute="leading" secondItem="rlS-c0-kJj" secondAttribute="trailing" id="HH1-Tv-aaM"/>
+                <constraint firstItem="haj-tr-4Ka" firstAttribute="centerX" secondItem="rlS-c0-kJj" secondAttribute="centerX" id="ICE-L9-bpx"/>
+                <constraint firstItem="o8U-EV-tHR" firstAttribute="centerX" secondItem="dQb-UG-pIH" secondAttribute="centerX" id="Ih0-9i-xu3"/>
+                <constraint firstAttribute="trailing" secondItem="dQb-UG-pIH" secondAttribute="trailing" id="TA3-pk-Qet"/>
+                <constraint firstItem="rlS-c0-kJj" firstAttribute="width" secondItem="dQb-UG-pIH" secondAttribute="width" id="Vaz-gg-7YM"/>
+                <constraint firstItem="rlS-c0-kJj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="asB-40-6fw"/>
+                <constraint firstItem="dQb-UG-pIH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f52-1s-ubt"/>
+                <constraint firstItem="o8U-EV-tHR" firstAttribute="top" secondItem="dQb-UG-pIH" secondAttribute="bottom" constant="1" id="gsB-um-dZW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="qihuoBtn" destination="dQb-UG-pIH" id="KiR-Nx-MKd"/>
+                <outlet property="qihuoL" destination="haj-tr-4Ka" id="pBs-dH-NRi"/>
+                <outlet property="xianhuoBtn" destination="rlS-c0-kJj" id="9F0-Ep-E0j"/>
+                <outlet property="xianhuoL" destination="o8U-EV-tHR" id="1fc-HF-ri3"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="u8m-vX-BSe" customClass="InfomationNavagationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="166" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HG-UV-zT6" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="41"/>
+                    <state key="normal" title="快讯">
+                        <color key="titleColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="kuaixun"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpF-ME-H3i">
+                    <rect key="frame" x="45.5" y="42" width="15" height="2"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Tui-FK-vZU"/>
+                        <constraint firstAttribute="width" constant="15" id="n1I-Vg-FD3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="167" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLo-5u-UUP" customClass="BTButton">
+                    <rect key="frame" x="106.5" y="0.0" width="107" height="41"/>
+                    <state key="normal" title="要闻">
+                        <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="yaowen"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbY-CZ-qH6">
+                    <rect key="frame" x="152.5" y="42" width="15" height="2"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="4Fu-gI-4jX"/>
+                        <constraint firstAttribute="height" constant="2" id="8MW-oY-wTp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="168" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uj-GD-iDs" customClass="BTButton">
+                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="41"/>
+                    <state key="normal" title="攻略">
+                        <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="gonglue"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upo-My-TdP">
+                    <rect key="frame" x="258.5" y="42" width="15" height="2"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="4XQ-tu-wDb"/>
+                        <constraint firstAttribute="width" constant="15" id="Ply-iM-6Xh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2HG-UV-zT6" firstAttribute="top" secondItem="u8m-vX-BSe" secondAttribute="top" id="2LI-C9-mZQ"/>
+                <constraint firstAttribute="bottom" secondItem="0uj-GD-iDs" secondAttribute="bottom" constant="3" id="33i-Wn-4kF"/>
+                <constraint firstAttribute="bottom" secondItem="2HG-UV-zT6" secondAttribute="bottom" constant="3" id="4Dd-Uv-v9a"/>
+                <constraint firstItem="DLo-5u-UUP" firstAttribute="leading" secondItem="2HG-UV-zT6" secondAttribute="trailing" id="6TM-pE-ype"/>
+                <constraint firstItem="2HG-UV-zT6" firstAttribute="width" secondItem="DLo-5u-UUP" secondAttribute="width" id="A7b-Lj-GYB"/>
+                <constraint firstItem="2HG-UV-zT6" firstAttribute="leading" secondItem="u8m-vX-BSe" secondAttribute="leading" id="BwF-Ay-yFF"/>
+                <constraint firstItem="DLo-5u-UUP" firstAttribute="width" secondItem="0uj-GD-iDs" secondAttribute="width" id="CML-0h-QBI"/>
+                <constraint firstAttribute="bottom" secondItem="JbY-CZ-qH6" secondAttribute="bottom" id="CZc-s0-0rk"/>
+                <constraint firstAttribute="bottom" secondItem="Upo-My-TdP" secondAttribute="bottom" id="UhT-AO-fCW"/>
+                <constraint firstItem="DLo-5u-UUP" firstAttribute="top" secondItem="u8m-vX-BSe" secondAttribute="top" id="Yfd-5b-Gbl"/>
+                <constraint firstItem="0uj-GD-iDs" firstAttribute="top" secondItem="u8m-vX-BSe" secondAttribute="top" id="ZsY-Pf-kys"/>
+                <constraint firstAttribute="bottom" secondItem="DLo-5u-UUP" secondAttribute="bottom" constant="3" id="bkm-Wh-qrp"/>
+                <constraint firstAttribute="trailing" secondItem="0uj-GD-iDs" secondAttribute="trailing" id="c4j-Jt-JaR"/>
+                <constraint firstItem="0uj-GD-iDs" firstAttribute="leading" secondItem="DLo-5u-UUP" secondAttribute="trailing" id="eDr-tb-Tvg"/>
+                <constraint firstItem="Upo-My-TdP" firstAttribute="centerX" secondItem="0uj-GD-iDs" secondAttribute="centerX" id="s3L-1l-esV"/>
+                <constraint firstItem="GpF-ME-H3i" firstAttribute="centerX" secondItem="2HG-UV-zT6" secondAttribute="centerX" id="sb9-cg-Dh3"/>
+                <constraint firstItem="JbY-CZ-qH6" firstAttribute="centerX" secondItem="DLo-5u-UUP" secondAttribute="centerX" id="wqy-fN-5l7"/>
+                <constraint firstAttribute="bottom" secondItem="GpF-ME-H3i" secondAttribute="bottom" id="zmI-mc-004"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="baikeBtn" destination="0uj-GD-iDs" id="kix-tT-tXD"/>
+                <outlet property="houseBtn" destination="2HG-UV-zT6" id="f6v-rE-QDG"/>
+                <outlet property="infoMationBtn" destination="DLo-5u-UUP" id="Z60-vt-7Lo"/>
+                <outlet property="lineL1" destination="GpF-ME-H3i" id="fcO-dj-vYk"/>
+                <outlet property="lineL2" destination="JbY-CZ-qH6" id="5LI-dj-6w5"/>
+                <outlet property="lineL3" destination="Upo-My-TdP" id="0We-JS-b9R"/>
+            </connections>
+        </view>
+    </objects>
+</document>

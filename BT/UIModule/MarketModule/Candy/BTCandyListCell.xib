@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BTCandyListCell" rowHeight="121" id="KGk-i7-Jjw" customClass="BTCandyListCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeToMain" translatesAutoresizingMaskIntoConstraints="NO" id="lgm-4F-Re4">
+                        <rect key="frame" x="227" y="25.5" width="100" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="BcE-ep-kYg"/>
+                            <constraint firstAttribute="height" constant="70" id="udJ-gD-h9Z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湖畔美景酒店式公寓前所未有的八大卖点，酒店式公寓前所未有dad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcp-Ax-nxf">
+                        <rect key="frame" x="15" y="25.5" width="202" height="55.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.082352941176470587" green="0.078431372549019607" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCc-2M-w8b">
+                        <rect key="frame" x="187" y="85" width="30" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Sp5-fD-tHy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="456">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加拿大房产局" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruU-Fg-IVj">
+                        <rect key="frame" x="15" y="86" width="74" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="y0o-of-b7P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vck-Hh-IJv">
+                        <rect key="frame" x="15" y="120" width="312" height="0.5"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Jc2-Ln-fNJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lgm-4F-Re4" firstAttribute="leading" secondItem="vcp-Ax-nxf" secondAttribute="trailing" constant="10" id="1W0-Ep-HW1"/>
+                    <constraint firstItem="lgm-4F-Re4" firstAttribute="top" secondItem="vcp-Ax-nxf" secondAttribute="top" id="2gb-nt-9Gy"/>
+                    <constraint firstItem="Vck-Hh-IJv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6uP-8T-hKB"/>
+                    <constraint firstItem="lgm-4F-Re4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AJQ-AH-YkS"/>
+                    <constraint firstItem="CCc-2M-w8b" firstAttribute="centerY" secondItem="ruU-Fg-IVj" secondAttribute="centerY" id="HVh-fk-PCr"/>
+                    <constraint firstAttribute="trailing" secondItem="lgm-4F-Re4" secondAttribute="trailing" constant="15" id="XBu-kf-t8d"/>
+                    <constraint firstItem="vcp-Ax-nxf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YlB-dt-RLi"/>
+                    <constraint firstItem="lgm-4F-Re4" firstAttribute="leading" secondItem="CCc-2M-w8b" secondAttribute="trailing" constant="10" id="Zk6-rb-qRh"/>
+                    <constraint firstItem="ruU-Fg-IVj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vcp-Ax-nxf" secondAttribute="bottom" constant="5" id="oW7-dp-sDj"/>
+                    <constraint firstAttribute="trailing" secondItem="Vck-Hh-IJv" secondAttribute="trailing" constant="15" id="ojW-Uw-Hw2"/>
+                    <constraint firstItem="Vck-Hh-IJv" firstAttribute="top" secondItem="ruU-Fg-IVj" secondAttribute="bottom" constant="20" id="r8y-SH-hPT"/>
+                    <constraint firstAttribute="bottom" secondItem="Vck-Hh-IJv" secondAttribute="bottom" id="sdB-Vg-RYn"/>
+                    <constraint firstItem="ruU-Fg-IVj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="toN-sJ-bqA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconIV" destination="lgm-4F-Re4" id="f4e-Y8-tpT"/>
+                <outlet property="imageIVWight" destination="BcE-ep-kYg" id="r0Y-Pe-dXy"/>
+                <outlet property="sourceL" destination="ruU-Fg-IVj" id="KJ2-SJ-6L1"/>
+                <outlet property="titleL" destination="vcp-Ax-nxf" id="153-Cd-72S"/>
+                <outlet property="viewCountL" destination="CCc-2M-w8b" id="8hC-Nh-355"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="60.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TypeToMain" width="46" height="46"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuotesDetailSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-5o-bMn" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="jianjie"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-cZ-xs9" customClass="BTButton">
+                    <rect key="frame" x="125" y="0.0" width="125" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="lunbi"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZi-TT-8bh" customClass="BTButton">
+                    <rect key="frame" x="250" y="0.0" width="125" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="shichang"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1eh-cZ-xs9" firstAttribute="top" secondItem="cXw-5o-bMn" secondAttribute="top" id="37i-vD-Ctg"/>
+                <constraint firstAttribute="bottom" secondItem="cXw-5o-bMn" secondAttribute="bottom" id="7K6-EN-wLs"/>
+                <constraint firstItem="RZi-TT-8bh" firstAttribute="height" secondItem="1eh-cZ-xs9" secondAttribute="height" id="7tX-XX-RG0"/>
+                <constraint firstItem="1eh-cZ-xs9" firstAttribute="leading" secondItem="cXw-5o-bMn" secondAttribute="trailing" id="7yW-F2-3pQ"/>
+                <constraint firstItem="RZi-TT-8bh" firstAttribute="top" secondItem="1eh-cZ-xs9" secondAttribute="top" id="Kbx-1p-M3d"/>
+                <constraint firstItem="1eh-cZ-xs9" firstAttribute="width" secondItem="cXw-5o-bMn" secondAttribute="width" id="NUU-OQ-1PX"/>
+                <constraint firstItem="RZi-TT-8bh" firstAttribute="width" secondItem="1eh-cZ-xs9" secondAttribute="width" id="OLE-fi-gFb"/>
+                <constraint firstItem="1eh-cZ-xs9" firstAttribute="height" secondItem="cXw-5o-bMn" secondAttribute="height" id="UrU-p4-Hx4"/>
+                <constraint firstItem="cXw-5o-bMn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="hYV-xr-Qz6"/>
+                <constraint firstItem="cXw-5o-bMn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hyQ-qk-fHO"/>
+                <constraint firstItem="cXw-5o-bMn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kvi-nf-tek"/>
+                <constraint firstItem="RZi-TT-8bh" firstAttribute="leading" secondItem="1eh-cZ-xs9" secondAttribute="trailing" id="oOb-pa-NQY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

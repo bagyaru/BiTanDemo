@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OneTopicview">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WxL-rh-UL6">
+                    <rect key="frame" x="15" y="15" width="185" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="104" id="427-eu-K4I"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC最近价格浮动这么大你们还会继续买吗？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awW-gr-8su">
+                    <rect key="frame" x="15" y="129" width="185" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.12941176470588234" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2316人参与讨论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-fc-Uvw">
+                    <rect key="frame" x="15" y="176" width="74.5" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="u6N-ek-zii"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                    <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-gc-mPb">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GxU-gc-mPb" secondAttribute="bottom" id="5OR-TL-5iY"/>
+                <constraint firstItem="GxU-gc-mPb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="J8b-nR-3SF"/>
+                <constraint firstItem="P2b-fc-Uvw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="JNp-JY-I3Q"/>
+                <constraint firstAttribute="trailing" secondItem="GxU-gc-mPb" secondAttribute="trailing" id="SGR-1z-sjk"/>
+                <constraint firstAttribute="trailing" secondItem="WxL-rh-UL6" secondAttribute="trailing" id="UNR-Gh-Tp0"/>
+                <constraint firstAttribute="bottom" secondItem="P2b-fc-Uvw" secondAttribute="bottom" constant="12" id="WSp-kY-Cha"/>
+                <constraint firstItem="WxL-rh-UL6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="dhV-DK-YaM"/>
+                <constraint firstItem="awW-gr-8su" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gCV-X6-RZs"/>
+                <constraint firstItem="WxL-rh-UL6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="gtX-I8-o1Z"/>
+                <constraint firstItem="GxU-gc-mPb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hp5-Pq-KqU"/>
+                <constraint firstAttribute="trailing" secondItem="awW-gr-8su" secondAttribute="trailing" id="taQ-CD-kx3"/>
+                <constraint firstItem="awW-gr-8su" firstAttribute="top" secondItem="WxL-rh-UL6" secondAttribute="bottom" constant="10" id="ugg-V9-LUd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="goDetailBtn" destination="GxU-gc-mPb" id="1De-TR-KYx"/>
+                <outlet property="imageIV" destination="WxL-rh-UL6" id="LPX-fM-KMa"/>
+                <outlet property="numberL" destination="P2b-fc-Uvw" id="8S9-NP-weF"/>
+                <outlet property="titleL" destination="awW-gr-8su" id="tsr-BE-ZWN"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddRecordNavView">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbC-iK-DT6" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                    <color key="backgroundColor" red="0.062745098039215685" green="0.55686274509803924" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="手动添加">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="shoudongtianjia"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nr-WO-n9A" customClass="BTButton">
+                    <rect key="frame" x="80" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="授权导入"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="shouquandaoru"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZa-5b-aTl">
+                    <rect key="frame" x="77" y="0.0" width="6" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.63292896747589111" blue="0.93204337358474731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="6" id="2iQ-D4-emR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zbC-iK-DT6" secondAttribute="bottom" id="8bh-mS-ggD"/>
+                <constraint firstItem="zbC-iK-DT6" firstAttribute="width" secondItem="9Nr-WO-n9A" secondAttribute="width" id="9Pm-wn-Y0B"/>
+                <constraint firstItem="9Nr-WO-n9A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sfw-ML-Tcg"/>
+                <constraint firstItem="9Nr-WO-n9A" firstAttribute="leading" secondItem="zbC-iK-DT6" secondAttribute="trailing" id="X3M-oX-o3d"/>
+                <constraint firstItem="zbC-iK-DT6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dD6-2K-Lgl"/>
+                <constraint firstAttribute="bottom" secondItem="9Nr-WO-n9A" secondAttribute="bottom" id="dzd-Av-vC5"/>
+                <constraint firstItem="RZa-5b-aTl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hxg-RG-nGZ"/>
+                <constraint firstAttribute="trailing" secondItem="9Nr-WO-n9A" secondAttribute="trailing" id="oY4-vP-YFS"/>
+                <constraint firstItem="zbC-iK-DT6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pAo-Uj-JkE"/>
+                <constraint firstAttribute="bottom" secondItem="RZa-5b-aTl" secondAttribute="bottom" id="wvh-iY-kfr"/>
+                <constraint firstItem="RZa-5b-aTl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y3h-9n-zoF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="middeL" destination="RZa-5b-aTl" id="bjP-D1-Dod"/>
+                <outlet property="sdtjBtn" destination="zbC-iK-DT6" id="5ff-eM-Yms"/>
+                <outlet property="sqdrBtn" destination="9Nr-WO-n9A" id="9Tf-CD-jFf"/>
+            </connections>
+        </view>
+    </objects>
+</document>

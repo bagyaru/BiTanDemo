@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BTPriceWarningAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="预警弹窗-跌" translatesAutoresizingMaskIntoConstraints="NO" id="cYG-2F-SAH">
+                    <rect key="frame" x="15" y="12.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="2Zy-iT-jNi"/>
+                        <constraint firstAttribute="width" constant="35" id="8qO-jl-ax6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKg-x1-ANK">
+                    <rect key="frame" x="61" y="9" width="11.5" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="4hf-tb-fx0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKj-7x-ers">
+                    <rect key="frame" x="61" y="31" width="13.5" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="goa-zL-Wqq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="预警箭头01" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-6s-Im3">
+                    <rect key="frame" x="296" y="19.5" width="9" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="9" id="3AM-Sa-hWD"/>
+                        <constraint firstAttribute="height" constant="21" id="fQi-9P-2Ek"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-Es-xn2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <connections>
+                        <action selector="goDetailBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2SL-f6-DA8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wKj-7x-ers" firstAttribute="top" secondItem="sKg-x1-ANK" secondAttribute="bottom" constant="5" id="5VV-It-Dj3"/>
+                <constraint firstAttribute="trailing" secondItem="Cfk-Es-xn2" secondAttribute="trailing" id="FiN-CN-0um"/>
+                <constraint firstItem="0dF-6s-Im3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K64-Y8-WNk"/>
+                <constraint firstItem="Cfk-Es-xn2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NI3-RI-SZ3"/>
+                <constraint firstItem="sKg-x1-ANK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="TKV-iU-nD0"/>
+                <constraint firstAttribute="bottom" secondItem="Cfk-Es-xn2" secondAttribute="bottom" id="Wpf-RA-8Y1"/>
+                <constraint firstItem="sKg-x1-ANK" firstAttribute="leading" secondItem="cYG-2F-SAH" secondAttribute="trailing" constant="11" id="Yy6-h7-Pic"/>
+                <constraint firstItem="Cfk-Es-xn2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gPn-cl-2Fq"/>
+                <constraint firstItem="cYG-2F-SAH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gi5-iT-gft"/>
+                <constraint firstItem="wKj-7x-ers" firstAttribute="leading" secondItem="cYG-2F-SAH" secondAttribute="trailing" constant="11" id="mai-8J-xsG"/>
+                <constraint firstAttribute="trailing" secondItem="0dF-6s-Im3" secondAttribute="trailing" constant="15" id="wk6-33-gXu"/>
+                <constraint firstItem="cYG-2F-SAH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="zHr-oS-PvR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="anamationIV" destination="0dF-6s-Im3" id="HGn-o4-9Wb"/>
+                <outlet property="labelContent" destination="wKj-7x-ers" id="yg6-lU-MzV"/>
+                <outlet property="labelTitle" destination="sKg-x1-ANK" id="lzp-N8-IkS"/>
+                <outlet property="zhangOrDieIV" destination="cYG-2F-SAH" id="dzf-dO-sdF"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="119.64017991004499"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="预警弹窗-跌" width="36" height="36"/>
+        <image name="预警箭头01" width="9" height="21"/>
+    </resources>
+</document>

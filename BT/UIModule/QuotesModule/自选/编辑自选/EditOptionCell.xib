@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="EditOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lA-FR-6EZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yix-IF-rve" customClass="BTCurrencyPairFirstLabel">
+                                <rect key="frame" x="86" y="28" width="28.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QR-2k-4SK">
+                                <rect key="frame" x="264" y="0.0" width="58" height="60.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="YRk-tQ-CpW"/>
+                                </constraints>
+                                <state key="normal" image="group_top"/>
+                                <connections>
+                                    <action selector="clickedBtnTop:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vtv-ba-abR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylV-26-pkV">
+                                <rect key="frame" x="86" y="14" width="26.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxN-Fg-ckM">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="60.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Yj1-nl-d7W"/>
+                                </constraints>
+                                <state key="normal" image="choose-sel"/>
+                                <state key="selected" image="choose-sel"/>
+                                <connections>
+                                    <action selector="clickSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8lt-ef-BpV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yix-IF-rve" firstAttribute="top" secondItem="ylV-26-pkV" secondAttribute="bottom" constant="2" id="0hK-nH-Gje"/>
+                            <constraint firstItem="ylV-26-pkV" firstAttribute="top" secondItem="4lA-FR-6EZ" secondAttribute="top" constant="14" id="31B-j7-jtf"/>
+                            <constraint firstItem="ylV-26-pkV" firstAttribute="leading" secondItem="4lA-FR-6EZ" secondAttribute="leading" constant="86" id="KB6-YW-DIK"/>
+                            <constraint firstAttribute="bottom" secondItem="DxN-Fg-ckM" secondAttribute="bottom" id="UH3-cH-65S"/>
+                            <constraint firstAttribute="bottom" secondItem="9QR-2k-4SK" secondAttribute="bottom" id="Yt4-BO-u6d"/>
+                            <constraint firstItem="9QR-2k-4SK" firstAttribute="top" secondItem="4lA-FR-6EZ" secondAttribute="top" id="hoZ-FL-GMz"/>
+                            <constraint firstItem="DxN-Fg-ckM" firstAttribute="top" secondItem="4lA-FR-6EZ" secondAttribute="top" id="oxB-9q-4AO"/>
+                            <constraint firstAttribute="trailing" secondItem="9QR-2k-4SK" secondAttribute="trailing" constant="53" id="x8R-Pt-n0e"/>
+                            <constraint firstItem="ylV-26-pkV" firstAttribute="leading" secondItem="Yix-IF-rve" secondAttribute="leading" id="xEZ-rB-2v8"/>
+                            <constraint firstItem="DxN-Fg-ckM" firstAttribute="leading" secondItem="4lA-FR-6EZ" secondAttribute="leading" id="yeA-8v-slp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4lA-FR-6EZ" secondAttribute="bottom" id="9AH-2d-Okc"/>
+                    <constraint firstItem="4lA-FR-6EZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YHW-Qc-hUm"/>
+                    <constraint firstItem="4lA-FR-6EZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="akH-FE-r3z"/>
+                    <constraint firstAttribute="trailing" secondItem="4lA-FR-6EZ" secondAttribute="trailing" id="mp4-JL-SRD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelected" destination="DxN-Fg-ckM" id="5XF-nh-sgL"/>
+                <outlet property="labelCurrentcyFirst" destination="Yix-IF-rve" id="bf9-up-2Vb"/>
+                <outlet property="labelName" destination="ylV-26-pkV" id="8vA-ab-z4c"/>
+                <outlet property="zhiidingBtn" destination="9QR-2k-4SK" id="jGD-hl-10g"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="62.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="choose-sel" width="16" height="16"/>
+        <image name="group_top" width="16" height="16"/>
+    </resources>
+</document>

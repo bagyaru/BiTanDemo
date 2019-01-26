@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fFy-G7-fB5" customClass="MyCoinDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tanliDetailCell.png" translatesAutoresizingMaskIntoConstraints="NO" id="ucZ-0E-g3H">
+                    <rect key="frame" x="20" y="25" width="376" height="54"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前探力：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg0-VF-qb5" customClass="BTLabel">
+                    <rect key="frame" x="30" y="43.5" width="71.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.80784313730000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localText" value="danqiantanli"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDO-xu-XY1">
+                    <rect key="frame" x="104.5" y="36.5" width="16" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                    <color key="textColor" red="1" green="0.80784313730000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail-down.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-SH-R1v">
+                    <rect key="frame" x="381" y="48" width="5" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="9gq-oQ-V4e"/>
+                        <constraint firstAttribute="height" constant="10" id="Q2f-VV-4g3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提升探力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0S-3r-Clx" customClass="BTLabel">
+                    <rect key="frame" x="326.5" y="45.5" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localText" value="tishengtanli"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3Lz-SH-R1v" firstAttribute="centerY" secondItem="f0S-3r-Clx" secondAttribute="centerY" id="0cj-1l-lRT"/>
+                <constraint firstItem="ucZ-0E-g3H" firstAttribute="leading" secondItem="fFy-G7-fB5" secondAttribute="leading" constant="20" id="3mc-Nr-UDe"/>
+                <constraint firstAttribute="bottom" secondItem="ucZ-0E-g3H" secondAttribute="bottom" constant="9" id="5sj-49-eXV"/>
+                <constraint firstItem="Gg0-VF-qb5" firstAttribute="leading" secondItem="fFy-G7-fB5" secondAttribute="leading" constant="30" id="N0m-8b-CNd"/>
+                <constraint firstItem="3Lz-SH-R1v" firstAttribute="leading" secondItem="f0S-3r-Clx" secondAttribute="trailing" constant="5" id="Tjc-jj-7x5"/>
+                <constraint firstAttribute="trailing" secondItem="3Lz-SH-R1v" secondAttribute="trailing" constant="30" id="UB8-mu-eaF"/>
+                <constraint firstItem="f0S-3r-Clx" firstAttribute="centerY" secondItem="ucZ-0E-g3H" secondAttribute="centerY" id="V8d-jt-3Vw"/>
+                <constraint firstItem="QDO-xu-XY1" firstAttribute="centerY" secondItem="ucZ-0E-g3H" secondAttribute="centerY" id="Yyv-AP-xzm"/>
+                <constraint firstAttribute="trailing" secondItem="ucZ-0E-g3H" secondAttribute="trailing" constant="20" id="ZLT-I4-NeX"/>
+                <constraint firstItem="Gg0-VF-qb5" firstAttribute="centerY" secondItem="ucZ-0E-g3H" secondAttribute="centerY" id="ay2-In-mcx"/>
+                <constraint firstItem="QDO-xu-XY1" firstAttribute="leading" secondItem="Gg0-VF-qb5" secondAttribute="trailing" constant="3" id="iRp-HM-XhJ"/>
+                <constraint firstItem="ucZ-0E-g3H" firstAttribute="top" secondItem="fFy-G7-fB5" secondAttribute="top" constant="25" id="kgt-8v-ENZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameL" destination="Gg0-VF-qb5" id="58f-Os-Qh2"/>
+                <outlet property="tsL" destination="f0S-3r-Clx" id="dhv-CJ-aEW"/>
+                <outlet property="valueL" destination="QDO-xu-XY1" id="MIU-ve-ZFe"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="-15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="detail-down.png" width="6" height="9"/>
+        <image name="tanliDetailCell.png" width="335" height="60"/>
+    </resources>
+</document>

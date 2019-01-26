@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Qy-ua-MWZ" customClass="BTDiscoverySelectView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNO-eh-hv3">
+                    <rect key="frame" x="15" y="13" width="43" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="q3m-f9-05o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="涨幅榜">
+                        <color key="titleColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEZ-gP-fh2">
+                    <rect key="frame" x="90" y="13" width="43" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="k8o-Js-DGr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="跌幅榜">
+                        <color key="titleColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBW-wG-Zw9">
+                    <rect key="frame" x="87.5" y="43" width="48" height="2"/>
+                    <color key="backgroundColor" red="0.082352941176470587" green="0.078431372549019607" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="0Iv-Jm-NXv"/>
+                        <constraint firstAttribute="height" constant="2" id="Jyj-Hc-cE5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNe-Ro-4es">
+                    <rect key="frame" x="12" y="43" width="48" height="2"/>
+                    <color key="backgroundColor" red="0.082352941176470587" green="0.078431372549019607" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="JsB-AD-N1V"/>
+                        <constraint firstAttribute="width" constant="48" id="XB1-Ty-7wY"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwn-sO-I3C">
+                    <rect key="frame" x="0.0" y="44.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="xrt-v7-hJU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vwn-sO-I3C" firstAttribute="leading" secondItem="8Qy-ua-MWZ" secondAttribute="leading" id="1ls-Pl-sXa"/>
+                <constraint firstAttribute="trailing" secondItem="vwn-sO-I3C" secondAttribute="trailing" id="7XG-SM-s7u"/>
+                <constraint firstItem="HNO-eh-hv3" firstAttribute="centerY" secondItem="8Qy-ua-MWZ" secondAttribute="centerY" id="AKu-OV-S5I"/>
+                <constraint firstAttribute="bottom" secondItem="UBW-wG-Zw9" secondAttribute="bottom" constant="1" id="JrY-48-RpT"/>
+                <constraint firstAttribute="bottom" secondItem="SNe-Ro-4es" secondAttribute="bottom" constant="1" id="Q4M-IA-b9Z"/>
+                <constraint firstItem="UBW-wG-Zw9" firstAttribute="centerX" secondItem="BEZ-gP-fh2" secondAttribute="centerX" id="VWf-wd-Lmb"/>
+                <constraint firstAttribute="bottom" secondItem="vwn-sO-I3C" secondAttribute="bottom" constant="1" id="bf1-jc-Ctd"/>
+                <constraint firstItem="BEZ-gP-fh2" firstAttribute="centerY" secondItem="8Qy-ua-MWZ" secondAttribute="centerY" id="g2p-Qe-nKW"/>
+                <constraint firstItem="HNO-eh-hv3" firstAttribute="leading" secondItem="8Qy-ua-MWZ" secondAttribute="leading" constant="15" id="hFT-xa-0Ua"/>
+                <constraint firstItem="SNe-Ro-4es" firstAttribute="centerX" secondItem="HNO-eh-hv3" secondAttribute="centerX" id="kh0-Ya-dUx"/>
+                <constraint firstItem="BEZ-gP-fh2" firstAttribute="leading" secondItem="HNO-eh-hv3" secondAttribute="trailing" constant="32" id="qwp-V3-n7T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dfBtn" destination="BEZ-gP-fh2" id="6nd-q4-d90"/>
+                <outlet property="dfIndicator" destination="UBW-wG-Zw9" id="CMh-Xh-y6d"/>
+                <outlet property="zfBtn" destination="HNO-eh-hv3" id="8Da-fN-02a"/>
+                <outlet property="zfIndicator" destination="SNe-Ro-4es" id="0kB-i6-O5A"/>
+            </connections>
+            <point key="canvasLocation" x="-213.5" y="-34"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1036" minimumToolsVersion="Xcode 8.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="CurrentcyModel">
+    <entity name="CurrentcyModel" representedClassName="CurrentcyModel" isAbstract="YES" syncable="YES">
+        <attribute name="currencyChineseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyChineseNameRelation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyCodeRelation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyEnglishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyEnglishNameRelation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencySimpleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencySimpleNameRelation" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="QiHuoSearchObj" representedClassName="QiHuoSearchObj" syncable="YES" codeGenerationType="class">
+        <attribute name="contractCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="futuresId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="productCode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="XianHuoSearchObj" representedClassName="XianHuoSearchObj" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="exchangeCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exchangeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="exchangeLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exchangeName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CurrentcyModel" positionX="-54" positionY="-9" width="128" height="165"/>
+        <element name="QiHuoSearchObj" positionX="-27" positionY="63" width="128" height="105"/>
+        <element name="XianHuoSearchObj" positionX="-45" positionY="45" width="128" height="105"/>
+    </elements>
+</model>

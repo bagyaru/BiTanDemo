@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteFriendVC">
+            <connections>
+                <outlet property="BTBIV" destination="1ww-7D-CjL" id="Eqg-Ah-5GZ"/>
+                <outlet property="indicatorL" destination="F9z-BT-9ga" id="xJt-bK-9bE"/>
+                <outlet property="inviteBtn" destination="9cn-rf-YIo" id="wuM-8o-TAj"/>
+                <outlet property="inviteCodeL" destination="ZDG-Tx-fGn" id="iCT-rf-NZu"/>
+                <outlet property="inviteCountL" destination="1Qh-c5-Gzf" id="O38-dD-ips"/>
+                <outlet property="inviteLayer" destination="IL0-T5-3Tf" id="1Cc-BG-ZLl"/>
+                <outlet property="inviteTotalL" destination="qRS-VV-I10" id="8UZ-KE-f5s"/>
+                <outlet property="mScrollview" destination="PI6-6E-Iim" id="Wks-ss-bFU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-6E-Iim">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_layer.png" translatesAutoresizingMaskIntoConstraints="NO" id="IL0-T5-3Tf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友没有上限  您已邀请2人" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-c5-Gzf">
+                            <rect key="frame" x="87" y="432.5" width="202" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.99999600648880005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-au-vHJ">
+                            <rect key="frame" x="20" y="114" width="335" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="JjN-Fw-VJ8"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-7D-CjL">
+                            <rect key="frame" x="132" y="67" width="111" height="71"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="111" id="9Pj-kt-oq1"/>
+                                <constraint firstAttribute="height" constant="71" id="ySF-VH-IJO"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友送探力！！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pc-RU-RBc" customClass="BTLabel">
+                            <rect key="frame" x="96" y="148" width="184" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.81176470588235294" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localText" value="yaoqinghaoyousongtanli"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每邀请1位好友送7个探力,可产生币探币,币探币数量有限，越早参与获利越多！" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9z-BT-9ga" customClass="BTLabel">
+                            <rect key="frame" x="60" y="204" width="255" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.99999600648880005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localText" value="yaoqinghaoyousongjigetanli"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的邀请码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJr-nF-3TI" customClass="BTLabel">
+                            <rect key="frame" x="152" y="286.5" width="72" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.99999600648880005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localText" value="nindeyaoqingma"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T5L9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDG-Tx-fGn">
+                            <rect key="frame" x="145" y="313.5" width="86" height="43"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.81176470588235294" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-rf-YIo" customClass="BTButton">
+                            <rect key="frame" x="109" y="376.5" width="157" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="kxx-bB-uda"/>
+                                <constraint firstAttribute="width" constant="157" id="yqo-0Z-Rwz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <state key="normal" title="立即邀请好友">
+                                <color key="titleColor" red="1" green="0.81176470590000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="lijiyaoqinghaoyou"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="inviteBtnClick:" destination="-1" eventType="touchUpInside" id="e4J-Av-8Mu"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已有276534位用户发出邀请今天总共释放了2344探力" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRS-VV-I10">
+                            <rect key="frame" x="108" y="489.5" width="159" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.99999600648880005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="ZDG-Tx-fGn" secondAttribute="centerX" id="0uG-EE-N8H"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="qRS-VV-I10" secondAttribute="centerX" id="7Oy-28-mnX"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="leading" secondItem="PI6-6E-Iim" secondAttribute="leading" id="84T-9z-2bf"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="9cn-rf-YIo" secondAttribute="centerX" id="9gT-yi-6e0"/>
+                        <constraint firstItem="F9z-BT-9ga" firstAttribute="top" secondItem="FmG-au-vHJ" secondAttribute="bottom" constant="10" id="E6Q-wY-FUb"/>
+                        <constraint firstItem="FmG-au-vHJ" firstAttribute="top" secondItem="PI6-6E-Iim" secondAttribute="top" constant="114" id="Gaa-vY-8EX"/>
+                        <constraint firstItem="1ww-7D-CjL" firstAttribute="top" secondItem="PI6-6E-Iim" secondAttribute="top" constant="67" id="Hje-QJ-AvA"/>
+                        <constraint firstAttribute="bottom" secondItem="IL0-T5-3Tf" secondAttribute="bottom" id="Jec-7e-fnG"/>
+                        <constraint firstAttribute="trailing" secondItem="FmG-au-vHJ" secondAttribute="trailing" constant="20" id="KEn-Lo-ZRF"/>
+                        <constraint firstItem="9cn-rf-YIo" firstAttribute="top" secondItem="ZDG-Tx-fGn" secondAttribute="bottom" constant="20" id="RMA-qz-hwq"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="1Qh-c5-Gzf" secondAttribute="centerX" id="RnN-nB-oay"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="1ww-7D-CjL" secondAttribute="centerX" id="S3H-WT-8vt"/>
+                        <constraint firstItem="7Pc-RU-RBc" firstAttribute="top" secondItem="1ww-7D-CjL" secondAttribute="bottom" constant="10" id="SVv-f8-AA5"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="top" secondItem="PI6-6E-Iim" secondAttribute="top" id="YvO-HB-V5J"/>
+                        <constraint firstItem="qRS-VV-I10" firstAttribute="leading" secondItem="PI6-6E-Iim" secondAttribute="leading" constant="108" id="Zfb-qg-9Vx"/>
+                        <constraint firstItem="qRS-VV-I10" firstAttribute="top" secondItem="1Qh-c5-Gzf" secondAttribute="bottom" constant="40" id="ayM-Mz-51Y"/>
+                        <constraint firstAttribute="trailing" secondItem="IL0-T5-3Tf" secondAttribute="trailing" id="btO-ao-r9j"/>
+                        <constraint firstItem="FmG-au-vHJ" firstAttribute="leading" secondItem="PI6-6E-Iim" secondAttribute="leading" constant="20" id="dp2-NO-wH0"/>
+                        <constraint firstItem="1Qh-c5-Gzf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PI6-6E-Iim" secondAttribute="leading" constant="10" id="ePT-pr-ptw"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="KJr-nF-3TI" secondAttribute="centerX" id="hS1-E5-fjz"/>
+                        <constraint firstItem="IL0-T5-3Tf" firstAttribute="centerX" secondItem="PI6-6E-Iim" secondAttribute="centerX" id="hV4-dO-Stg"/>
+                        <constraint firstItem="F9z-BT-9ga" firstAttribute="leading" secondItem="PI6-6E-Iim" secondAttribute="leading" constant="60" id="icg-eU-xe4"/>
+                        <constraint firstItem="1Qh-c5-Gzf" firstAttribute="top" secondItem="9cn-rf-YIo" secondAttribute="bottom" constant="10" id="knW-NE-j2B"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Qh-c5-Gzf" secondAttribute="trailing" constant="10" id="m19-96-zHn"/>
+                        <constraint firstItem="KJr-nF-3TI" firstAttribute="top" secondItem="F9z-BT-9ga" secondAttribute="bottom" constant="49" id="mtL-5D-G3h"/>
+                        <constraint firstItem="7Pc-RU-RBc" firstAttribute="centerX" secondItem="FmG-au-vHJ" secondAttribute="centerX" id="pWo-tx-eaT"/>
+                        <constraint firstItem="ZDG-Tx-fGn" firstAttribute="top" secondItem="KJr-nF-3TI" secondAttribute="bottom" constant="10" id="sx9-Jh-AxA"/>
+                        <constraint firstAttribute="trailing" secondItem="F9z-BT-9ga" secondAttribute="trailing" constant="60" id="wi7-lU-zM2"/>
+                        <constraint firstAttribute="trailing" secondItem="qRS-VV-I10" secondAttribute="trailing" constant="108" id="xcF-DW-M7P"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PI6-6E-Iim" secondAttribute="bottom" id="3uv-Xq-csW"/>
+                <constraint firstAttribute="trailing" secondItem="PI6-6E-Iim" secondAttribute="trailing" id="gXD-MR-1Oz"/>
+                <constraint firstItem="PI6-6E-Iim" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mPi-jh-kr2"/>
+                <constraint firstItem="PI6-6E-Iim" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uxQ-zc-Xwp"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="55.5" y="111.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="invite_background.png" width="335" height="80"/>
+        <image name="invite_coin.png" width="111" height="71"/>
+        <image name="invite_layer.png" width="375" height="603"/>
+    </resources>
+</document>

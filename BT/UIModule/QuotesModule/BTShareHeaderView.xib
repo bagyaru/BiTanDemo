@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rij-Z6-MqB" customClass="BTShareHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Kh-bl-TJI">
+                    <rect key="frame" x="16" y="15" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="6W2-rr-OCf"/>
+                        <constraint firstAttribute="height" constant="60" id="hjY-Bm-jen"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KXShare_Foot_EWM" translatesAutoresizingMaskIntoConstraints="NO" id="pBR-2p-0mp">
+                    <rect key="frame" x="300" y="15" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="7lj-Ai-VGp"/>
+                        <constraint firstAttribute="height" constant="60" id="DLc-Vl-PP3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="币探" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q33-ZM-HJH" customClass="BTLabel">
+                    <rect key="frame" x="88" y="15" width="37" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixText" value="bitan"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字资产全网行情资讯触手可及" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpq-Y5-4hg" customClass="BTLabel">
+                    <rect key="frame" x="88" y="40" width="202" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixText" value="shuzizichan"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期四 2018年05月17日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeE-uw-lcD" customClass="BTLabel">
+                    <rect key="frame" x="88" y="59" width="111.66666666666669" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pBR-2p-0mp" firstAttribute="top" secondItem="rij-Z6-MqB" secondAttribute="top" constant="15" id="14l-pi-drr"/>
+                <constraint firstItem="q33-ZM-HJH" firstAttribute="leading" secondItem="6Kh-bl-TJI" secondAttribute="trailing" constant="12" id="EGo-mQ-ibl"/>
+                <constraint firstAttribute="trailing" secondItem="pBR-2p-0mp" secondAttribute="trailing" constant="15" id="M1O-RC-iuJ"/>
+                <constraint firstItem="hpq-Y5-4hg" firstAttribute="leading" secondItem="q33-ZM-HJH" secondAttribute="leading" id="SET-bq-qp9"/>
+                <constraint firstItem="6Kh-bl-TJI" firstAttribute="leading" secondItem="rij-Z6-MqB" secondAttribute="leading" constant="16" id="US1-7h-ijr"/>
+                <constraint firstItem="hpq-Y5-4hg" firstAttribute="top" secondItem="q33-ZM-HJH" secondAttribute="bottom" constant="3" id="VbI-1U-oaz"/>
+                <constraint firstItem="AeE-uw-lcD" firstAttribute="leading" secondItem="hpq-Y5-4hg" secondAttribute="leading" id="avb-rm-wl6"/>
+                <constraint firstItem="6Kh-bl-TJI" firstAttribute="top" secondItem="rij-Z6-MqB" secondAttribute="top" constant="15" id="kL5-kg-pH3"/>
+                <constraint firstItem="pBR-2p-0mp" firstAttribute="leading" secondItem="hpq-Y5-4hg" secondAttribute="trailing" constant="10" id="sdk-bV-0Mh"/>
+                <constraint firstItem="AeE-uw-lcD" firstAttribute="top" secondItem="hpq-Y5-4hg" secondAttribute="bottom" constant="4" id="yJG-C3-Uzb"/>
+                <constraint firstItem="q33-ZM-HJH" firstAttribute="top" secondItem="6Kh-bl-TJI" secondAttribute="top" id="zel-z6-zhS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailL" destination="hpq-Y5-4hg" id="2Ho-sB-ZDc"/>
+                <outlet property="nameL" destination="q33-ZM-HJH" id="o34-Ck-cdC"/>
+                <outlet property="timeL" destination="AeE-uw-lcD" id="oyG-7d-m1s"/>
+            </connections>
+            <point key="canvasLocation" x="-121" y="-316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="KXShare_Foot_EWM" width="62" height="62"/>
+        <image name="ic_logo.png" width="60" height="60"/>
+    </resources>
+</document>

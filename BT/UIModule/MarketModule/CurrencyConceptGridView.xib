@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bLz-Ib-hFF" customClass="CurrencyConceptGridView">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付概念" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBX-U2-vXq">
+                    <rect key="frame" x="47" y="17" width="50" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9B-Sf-EQE">
+                    <rect key="frame" x="42" y="42" width="60" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.74117647058823533" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="XMCC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eor-ic-Xcn">
+                    <rect key="frame" x="19" y="76" width="31" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.23%" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggn-2d-FNk">
+                    <rect key="frame" x="55" y="76" width="87" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.74117647058823533" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eor-ic-Xcn" firstAttribute="top" secondItem="r9B-Sf-EQE" secondAttribute="bottom" constant="10" id="MTm-5l-2fu"/>
+                <constraint firstItem="IBX-U2-vXq" firstAttribute="top" secondItem="bLz-Ib-hFF" secondAttribute="top" constant="17" id="Sb5-5F-Pc0"/>
+                <constraint firstAttribute="trailing" secondItem="ggn-2d-FNk" secondAttribute="trailing" constant="2" id="Slv-9s-H4J"/>
+                <constraint firstItem="eor-ic-Xcn" firstAttribute="leading" secondItem="bLz-Ib-hFF" secondAttribute="leading" constant="19" id="TDH-dh-NDF"/>
+                <constraint firstItem="ggn-2d-FNk" firstAttribute="leading" secondItem="eor-ic-Xcn" secondAttribute="trailing" constant="5" id="ZN7-q8-3Rt"/>
+                <constraint firstItem="r9B-Sf-EQE" firstAttribute="top" secondItem="IBX-U2-vXq" secondAttribute="bottom" constant="10" id="gRn-Wy-cR9"/>
+                <constraint firstItem="r9B-Sf-EQE" firstAttribute="centerX" secondItem="IBX-U2-vXq" secondAttribute="centerX" id="nqF-qc-QoU"/>
+                <constraint firstItem="IBX-U2-vXq" firstAttribute="centerX" secondItem="bLz-Ib-hFF" secondAttribute="centerX" id="odX-vs-yNG"/>
+                <constraint firstItem="ggn-2d-FNk" firstAttribute="centerY" secondItem="eor-ic-Xcn" secondAttribute="centerY" id="yE7-T2-i72"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="greatL" destination="ggn-2d-FNk" id="tXQ-gD-3WA"/>
+                <outlet property="maxKindL" destination="eor-ic-Xcn" id="lKa-ZZ-hu2"/>
+                <outlet property="nameL" destination="IBX-U2-vXq" id="3vk-f6-7xO"/>
+                <outlet property="rateL" destination="r9B-Sf-EQE" id="r8c-MG-VKb"/>
+            </connections>
+            <point key="canvasLocation" x="-62" y="-260"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRT-YH-cz5">
+                    <rect key="frame" x="60" y="233.5" width="255" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有登录哦！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6O-p1-bUA" customClass="BTLabel">
+                            <rect key="frame" x="70.5" y="92" width="114.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cb-rQ-dfV" customClass="BTButton">
+                            <rect key="frame" x="92.5" y="121" width="70" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="9n9-bW-0Br"/>
+                                <constraint firstAttribute="height" constant="28" id="Uqq-HH-urr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="立即登录"/>
+                            <connections>
+                                <action selector="clickedBtnLogin:" destination="iN0-l3-epB" eventType="touchUpInside" id="SdM-zh-jBT"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dpG-Bg-hX5">
+                            <rect key="frame" x="86.5" y="0.0" width="82" height="82"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="82" id="Ph0-hU-dz3"/>
+                                <constraint firstAttribute="width" constant="82" id="sEe-AV-Naf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dpG-Bg-hX5" firstAttribute="centerX" secondItem="gRT-YH-cz5" secondAttribute="centerX" id="Ung-Bk-QMe"/>
+                        <constraint firstItem="dpG-Bg-hX5" firstAttribute="top" secondItem="gRT-YH-cz5" secondAttribute="top" id="WQ8-L6-1rV"/>
+                        <constraint firstItem="H6O-p1-bUA" firstAttribute="top" secondItem="dpG-Bg-hX5" secondAttribute="bottom" constant="10" id="YLP-mc-1CW"/>
+                        <constraint firstItem="H6O-p1-bUA" firstAttribute="centerX" secondItem="dpG-Bg-hX5" secondAttribute="centerX" id="ZBY-aO-lZy"/>
+                        <constraint firstItem="H6O-p1-bUA" firstAttribute="centerX" secondItem="0Cb-rQ-dfV" secondAttribute="centerX" id="fhg-wJ-4Yn"/>
+                        <constraint firstItem="0Cb-rQ-dfV" firstAttribute="top" secondItem="H6O-p1-bUA" secondAttribute="bottom" constant="12" id="hzU-Ex-lYE"/>
+                        <constraint firstAttribute="height" constant="200" id="nhb-px-9vR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gRT-YH-cz5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="FlR-qz-GN3"/>
+                <constraint firstItem="gRT-YH-cz5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HWG-X4-cqM"/>
+                <constraint firstAttribute="trailing" secondItem="gRT-YH-cz5" secondAttribute="trailing" constant="60" id="rZd-5K-6TM"/>
+            </constraints>
+            <connections>
+                <outlet property="btnLogin" destination="0Cb-rQ-dfV" id="gUF-Yj-3mb"/>
+                <outlet property="centerH" destination="HWG-X4-cqM" id="opr-BX-aFM"/>
+                <outlet property="imageH" destination="Ph0-hU-dz3" id="0nw-Qn-E5w"/>
+                <outlet property="imageViewIcon" destination="dpG-Bg-hX5" id="tmK-NN-mtZ"/>
+                <outlet property="imageW" destination="sEe-AV-Naf" id="KhE-ib-Ze7"/>
+                <outlet property="lableInfo" destination="H6O-p1-bUA" id="A2I-8v-Fqq"/>
+                <outlet property="loginTop" destination="hzU-Ex-lYE" id="yBA-aR-MFe"/>
+                <outlet property="loginW" destination="9n9-bW-0Br" id="YW4-P3-Hwn"/>
+                <outlet property="topH" destination="YLP-mc-1CW" id="zeE-3T-zuR"/>
+                <outlet property="viewContent" destination="gRT-YH-cz5" id="ueP-Il-QqX"/>
+                <outlet property="viewH" destination="nhb-px-9vR" id="gms-44-dod"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

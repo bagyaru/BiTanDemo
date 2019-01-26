@@ -1,0 +1,119 @@
+//
+//  BT.pch
+//  BT
+//
+//  Created by apple on 2018/1/15.
+//  Copyright © 2018年 apple. All rights reserved.
+//
+
+#ifndef BT_h
+#define BT_h
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <AdSupport/ASIdentifierManager.h>
+
+#import "BTLanguageTrasnferService.h"
+#import "BTLog.h"
+#import "BTRequestURLs.h"
+#import "BTControllerManager.h"
+#import "BTBaseRequest.h"
+#import "BTCacheRequest.h"
+#import "BTCacheRequest.h"
+#import "BTLoadingView.h"
+#import "BTGetUserInfoDefalut.h"
+#import "BTDeleteMyCommentRequest.h"
+#import "CommentsAlertView.h"
+#import "BTGroupListModel.h"
+
+#import "AppHelper.h"
+#import "DigitalHelper.h"
+#import "NSNumber+Utils.h"
+#import "UITableView+Utils.h"
+#import "BTConfigureService.h"
+
+
+#pragma mark - user UI
+
+#import "BTRefreshHeader.h"
+#import "BTRefreshFooter.h"
+
+#import "BTLabel.h"
+#import "BTCopyLabel.h"
+#import "BTView.h"
+#import "BTButton.h"
+#import "BTTextField.h"
+#import "BTTextView.h"
+
+
+#import "CommonMacros.h"
+#import "FontAndColorMacros.h"
+#import "ThirdMacros.h"
+#import "UtilsMacros.h"
+#import "BTThreeManager.h"
+#import "MBProgressHUD+MKExtension.h"
+#import "NSObject+Private.h"
+#import "UIView+MKExtension.h"
+#import "NSRegularExpression+SHY_GetValues.h"
+//分享相关
+#import "HYShareActivityView.h"
+#import "HYShareInfo.h"
+#import "HYShareKit.h"
+#import "H5ViewController.h"
+#import "H5Node.h"
+
+#pragma mark - ThirdParty
+#import <AFNetworking.h>
+#import <YTKNetwork.h>
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
+#import <SDCycleScrollView.h>
+//#import <Toast/UIView+Toast.h>
+#import <YYKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <WXApi.h>
+#import "JPUSHService.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "UMMobClick/MobClick.h"
+#import <UIAlertView+Blocks.h>
+#import "AnalysisService.h"
+
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+#import "UILabel+Factory.h"
+#import "BTHelperMethod.h"
+#import "UIControl+Click.h"
+#import "BTShowLoading.h"
+//图片合成
+#import "HImageUtility.h"
+#import "UIScrollView+ScrollToTop_Runtime.h"
+#import "BTSearchService.h"
+
+
+#import "HintAlert.h"
+//微信SDK头文件
+#import "WXApi.h"
+//新浪微博SDK头文件
+#import "WeiboSDK.h"
+//头像
+#define PhotoImageURL @"http://image.muzhao888.com/"
+
+#define lang_version_build              @"币探 V%@ build %@"
+
+#define NaviBarHeight (iPhoneX ? 88 :64)
+
+//本地版本号(每次更新都要变+10，特殊情况除外-比如实际更新了但是不提示更新的情况)2.6.1
+#define VersionNumber @"81"
+
+//APP下载地址
+#define APP_DOWNLOADURL @"https://itunes.apple.com/us/app/%E5%B8%81%E6%8E%A2/id1335517724?l=zh&ls=1&mt=8"
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+#define BTGoodGuideTishi @"BTGoodGuideTishi"
+#define isOrNoGoodGuideTishi @"isOrNoGoodGuideTishi"
+//密码加密
+#define MD5PassWordStr @"www.yztz.com#1Pwd_salt@Default2+!`%Ok_here'The&End$"
+
+#endif /* BT_h */

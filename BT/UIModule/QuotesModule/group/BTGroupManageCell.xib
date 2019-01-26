@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BTGroupManageCell" rowHeight="67" id="KGk-i7-Jjw" customClass="BTGroupManageCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1D-TP-fI4">
+                        <rect key="frame" x="44" y="23.5" width="33" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_more.png" translatesAutoresizingMaskIntoConstraints="NO" id="aDi-P0-hmh">
+                        <rect key="frame" x="330" y="28" width="6" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="CNM-G4-M7d"/>
+                            <constraint firstAttribute="width" constant="6" id="Eyx-W7-tfo"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go4-lN-NTB">
+                        <rect key="frame" x="157.5" y="0.0" width="47" height="66.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="aiL-qb-5Bw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="重命名">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="reNameAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CIt-op-Azx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6f-m1-GhB">
+                        <rect key="frame" x="294" y="0.0" width="58" height="66.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="omQ-Tu-CPY"/>
+                        </constraints>
+                        <state key="normal" image="group_top"/>
+                        <connections>
+                            <action selector="topAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ckU-ok-PTL"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不可编辑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0y-9S-iH1">
+                        <rect key="frame" x="287" y="26" width="50" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-Wg-hkq">
+                        <rect key="frame" x="0.0" y="0.0" width="44" height="66.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="9VX-lW-GQX"/>
+                        </constraints>
+                        <state key="normal" image="edit_delete"/>
+                        <connections>
+                            <action selector="deleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fo8-to-EV5"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ePD-Wg-hkq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3cp-DD-XH4"/>
+                    <constraint firstItem="k1D-TP-fI4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="69x-EQ-W2V"/>
+                    <constraint firstAttribute="trailing" secondItem="aDi-P0-hmh" secondAttribute="trailing" constant="16" id="7fC-Ff-XKq"/>
+                    <constraint firstItem="k1D-TP-fI4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="44" id="9ac-rw-4ew"/>
+                    <constraint firstAttribute="trailing" secondItem="G0y-9S-iH1" secondAttribute="trailing" constant="15" id="BE4-sC-NE9"/>
+                    <constraint firstAttribute="bottom" secondItem="I6f-m1-GhB" secondAttribute="bottom" id="Gwu-8U-Zrd"/>
+                    <constraint firstItem="aDi-P0-hmh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lu5-jN-5pW"/>
+                    <constraint firstItem="G0y-9S-iH1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nyk-VT-uZx"/>
+                    <constraint firstAttribute="bottom" secondItem="go4-lN-NTB" secondAttribute="bottom" id="QVi-Lz-17G"/>
+                    <constraint firstItem="ePD-Wg-hkq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sc1-dd-LWq"/>
+                    <constraint firstItem="go4-lN-NTB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="V4d-8t-iR1"/>
+                    <constraint firstItem="go4-lN-NTB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="5" id="ttR-rQ-EXa"/>
+                    <constraint firstAttribute="trailing" secondItem="I6f-m1-GhB" secondAttribute="trailing" id="u8h-dW-2Zf"/>
+                    <constraint firstAttribute="bottom" secondItem="ePD-Wg-hkq" secondAttribute="bottom" id="uAv-3N-MSU"/>
+                    <constraint firstItem="go4-lN-NTB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uyU-2r-toz"/>
+                    <constraint firstItem="I6f-m1-GhB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yHb-V9-1aM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteBtn" destination="ePD-Wg-hkq" id="pt6-dS-Ibw"/>
+                <outlet property="hintDescL" destination="G0y-9S-iH1" id="MLu-P3-bpB"/>
+                <outlet property="indicatorV" destination="aDi-P0-hmh" id="clv-ef-Zxn"/>
+                <outlet property="nameL" destination="k1D-TP-fI4" id="SUL-eO-WJq"/>
+                <outlet property="nameLConstraint" destination="9ac-rw-4ew" id="1cq-Re-dRp"/>
+                <outlet property="reNameBtn" destination="go4-lN-NTB" id="6pB-Ni-GfA"/>
+                <outlet property="zhidingBtn" destination="I6f-m1-GhB" id="Ry1-Us-WJF"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="42.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="detail_more.png" width="7" height="12"/>
+        <image name="edit_delete" width="16" height="16"/>
+        <image name="group_top" width="16" height="16"/>
+    </resources>
+</document>

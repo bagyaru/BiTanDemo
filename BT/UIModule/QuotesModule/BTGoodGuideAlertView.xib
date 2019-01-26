@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BTGoodGuideAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi~你喜欢新版的币探吗？如果还行就为我点赞吧！！！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-kb-dbn" customClass="BTLabel">
+                    <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="erP-p3-Qb9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localText" value="haopingyindao_title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-2N-Ech">
+                    <rect key="frame" x="0.0" y="60" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="49T-mX-hS2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rB-Tb-mQV" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="61" width="320" height="62"/>
+                    <state key="normal" title="五星好评"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="wuxinghaoping"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="wxhpBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cmX-qy-Gsd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B6-5S-ygz">
+                    <rect key="frame" x="0.0" y="123" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="8EO-ki-JbJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPg-fX-SOb" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="124" width="320" height="62"/>
+                    <state key="normal" title="去吐槽">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="qutucao"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="qtcBtnClcik:" destination="iN0-l3-epB" eventType="touchUpInside" id="bXm-s8-0Nh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taj-Bd-DXk">
+                    <rect key="frame" x="0.0" y="186" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TpN-FS-Efb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXA-uE-jTh" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="187" width="320" height="62"/>
+                    <state key="normal" title="下次再说">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.61535373260000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="xiacizaishuo"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="xczsBtnClcik:" destination="iN0-l3-epB" eventType="touchUpInside" id="xLW-jp-zTX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbq-20-OqJ">
+                    <rect key="frame" x="0.0" y="249" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="AXu-wP-CbP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OXA-uE-jTh" secondAttribute="trailing" id="1rZ-0C-yOM"/>
+                <constraint firstItem="TPg-fX-SOb" firstAttribute="height" secondItem="4rB-Tb-mQV" secondAttribute="height" id="3Xt-Mv-lpt"/>
+                <constraint firstAttribute="trailing" secondItem="sFw-2N-Ech" secondAttribute="trailing" id="4j4-xt-kFi"/>
+                <constraint firstItem="8B6-5S-ygz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D5g-Va-F71"/>
+                <constraint firstItem="taj-Bd-DXk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DCJ-H3-uf7"/>
+                <constraint firstItem="TPg-fX-SOb" firstAttribute="top" secondItem="8B6-5S-ygz" secondAttribute="bottom" id="DPq-Vg-mH6"/>
+                <constraint firstItem="8B6-5S-ygz" firstAttribute="top" secondItem="4rB-Tb-mQV" secondAttribute="bottom" id="GqP-nf-nW3"/>
+                <constraint firstItem="zbq-20-OqJ" firstAttribute="top" secondItem="OXA-uE-jTh" secondAttribute="bottom" id="Knw-nw-NAz"/>
+                <constraint firstAttribute="trailing" secondItem="p3V-kb-dbn" secondAttribute="trailing" constant="10" id="Kyo-4E-sZ8"/>
+                <constraint firstItem="TPg-fX-SOb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LoP-Wy-ERl"/>
+                <constraint firstItem="OXA-uE-jTh" firstAttribute="height" secondItem="TPg-fX-SOb" secondAttribute="height" id="OqG-wy-dbH"/>
+                <constraint firstItem="p3V-kb-dbn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="P7C-AZ-QVA"/>
+                <constraint firstAttribute="bottom" secondItem="zbq-20-OqJ" secondAttribute="bottom" id="SUW-rP-TUr"/>
+                <constraint firstAttribute="trailing" secondItem="8B6-5S-ygz" secondAttribute="trailing" id="VXJ-cg-iUc"/>
+                <constraint firstItem="4rB-Tb-mQV" firstAttribute="top" secondItem="sFw-2N-Ech" secondAttribute="bottom" id="WD5-bC-KRl"/>
+                <constraint firstAttribute="trailing" secondItem="taj-Bd-DXk" secondAttribute="trailing" id="WMM-MQ-FAC"/>
+                <constraint firstItem="p3V-kb-dbn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wpi-Zi-Lpq"/>
+                <constraint firstItem="taj-Bd-DXk" firstAttribute="top" secondItem="TPg-fX-SOb" secondAttribute="bottom" id="Xe3-nx-mp8"/>
+                <constraint firstItem="sFw-2N-Ech" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YQ0-Km-Geq"/>
+                <constraint firstItem="sFw-2N-Ech" firstAttribute="top" secondItem="p3V-kb-dbn" secondAttribute="bottom" id="cL9-OK-4DL"/>
+                <constraint firstAttribute="trailing" secondItem="zbq-20-OqJ" secondAttribute="trailing" id="doQ-VE-Hef"/>
+                <constraint firstItem="taj-Bd-DXk" firstAttribute="top" secondItem="TPg-fX-SOb" secondAttribute="bottom" id="flV-4s-gaR"/>
+                <constraint firstItem="zbq-20-OqJ" firstAttribute="top" secondItem="OXA-uE-jTh" secondAttribute="bottom" id="g0c-uD-9VQ"/>
+                <constraint firstItem="4rB-Tb-mQV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nlg-zV-tQ6"/>
+                <constraint firstAttribute="trailing" secondItem="TPg-fX-SOb" secondAttribute="trailing" id="opi-BK-pMm"/>
+                <constraint firstItem="OXA-uE-jTh" firstAttribute="top" secondItem="taj-Bd-DXk" secondAttribute="bottom" id="pxI-Y0-kRI"/>
+                <constraint firstAttribute="trailing" secondItem="4rB-Tb-mQV" secondAttribute="trailing" id="qp3-D5-f6W"/>
+                <constraint firstItem="zbq-20-OqJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wPF-lj-inJ"/>
+                <constraint firstItem="OXA-uE-jTh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yrL-Mk-NEj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

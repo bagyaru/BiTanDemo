@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ay0-aU-Um5" customClass="BTICOContentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="416"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Miu-pj-hEa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token 交易" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyc-qA-8j7" customClass="BTLabel">
+                            <rect key="frame" x="15" y="15" width="80.5" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="pDK-Xb-qRL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fixText" value="TokenJiaoyi"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Lyc-qA-8j7" firstAttribute="top" secondItem="Miu-pj-hEa" secondAttribute="top" constant="15" id="EuU-2Y-2X6"/>
+                        <constraint firstAttribute="height" constant="55" id="NIS-gp-n8S"/>
+                        <constraint firstItem="Lyc-qA-8j7" firstAttribute="leading" secondItem="Miu-pj-hEa" secondAttribute="leading" constant="15" id="eUA-iL-9Uz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-uR-UN1">
+                    <rect key="frame" x="15" y="55" width="345" height="349"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="V1g-uR-UN1" firstAttribute="leading" secondItem="ay0-aU-Um5" secondAttribute="leading" constant="15" id="7c8-iZ-cmS"/>
+                <constraint firstAttribute="trailing" secondItem="Miu-pj-hEa" secondAttribute="trailing" id="HT3-xW-z6B"/>
+                <constraint firstItem="V1g-uR-UN1" firstAttribute="top" secondItem="Miu-pj-hEa" secondAttribute="bottom" id="qpK-1D-kAl"/>
+                <constraint firstItem="Miu-pj-hEa" firstAttribute="top" secondItem="ay0-aU-Um5" secondAttribute="top" id="r7m-FC-Ee4"/>
+                <constraint firstAttribute="trailing" secondItem="V1g-uR-UN1" secondAttribute="trailing" constant="15" id="sLF-xJ-YO7"/>
+                <constraint firstItem="Miu-pj-hEa" firstAttribute="leading" secondItem="ay0-aU-Um5" secondAttribute="leading" id="yN9-l1-glg"/>
+                <constraint firstAttribute="bottom" secondItem="V1g-uR-UN1" secondAttribute="bottom" constant="12" id="ydy-Rm-PCK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="V1g-uR-UN1" id="Rp3-bT-Bok"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="-36"/>
+        </view>
+    </objects>
+</document>

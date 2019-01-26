@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyZiOptionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLL-Mg-YDl" customClass="BTButton">
+                    <rect key="frame" x="248" y="0.0" width="52" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="24H涨跌">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="24hzhangdie"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickedBtnUpAndDown:" destination="iN0-l3-epB" eventType="touchUpInside" id="YGF-tb-KbY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-rj-Te8" customClass="BTButton">
+                    <rect key="frame" x="15" y="0.0" width="30" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="All">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="daibi"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickedBtnSort:" destination="iN0-l3-epB" eventType="touchUpInside" id="APp-Tb-Ngi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4x-ab-uJV" customClass="BTButton">
+                    <rect key="frame" x="141.5" y="8.5" width="37" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="最新价">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="zuixinjia"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sortPrice:" destination="iN0-l3-epB" eventType="touchUpInside" id="qWf-Gx-V5y"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterdown.png" translatesAutoresizingMaskIntoConstraints="NO" id="gJ7-UQ-PEr">
+                    <rect key="frame" x="45" y="20" width="6" height="4"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="HJC-jf-N58"/>
+                        <constraint firstAttribute="width" constant="6" id="OKQ-KJ-RFJ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unsort.png" translatesAutoresizingMaskIntoConstraints="NO" id="O8d-Yf-K2z">
+                    <rect key="frame" x="300" y="17" width="6" height="10"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-p2-c1M" customClass="BTButton">
+                    <rect key="frame" x="84" y="8.5" width="50" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="默认排序">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fixTitle" value="morenpaixu"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="morenSelectAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="adA-ut-dRT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i4x-ab-uJV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1lq-g8-T83"/>
+                <constraint firstItem="O8d-Yf-K2z" firstAttribute="centerY" secondItem="qLL-Mg-YDl" secondAttribute="centerY" id="218-9i-Esl"/>
+                <constraint firstAttribute="bottom" secondItem="qLL-Mg-YDl" secondAttribute="bottom" id="219-kW-yRZ"/>
+                <constraint firstItem="gJ7-UQ-PEr" firstAttribute="leading" secondItem="IM6-rj-Te8" secondAttribute="trailing" id="21L-jA-EDs"/>
+                <constraint firstItem="hbe-p2-c1M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gJ7-UQ-PEr" secondAttribute="trailing" constant="5" id="BtV-Zv-wVl"/>
+                <constraint firstItem="i4x-ab-uJV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EiC-ye-bVu"/>
+                <constraint firstItem="IM6-rj-Te8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="GrG-dF-WBR"/>
+                <constraint firstItem="O8d-Yf-K2z" firstAttribute="leading" secondItem="qLL-Mg-YDl" secondAttribute="trailing" id="IXj-N1-IdR"/>
+                <constraint firstAttribute="bottom" secondItem="IM6-rj-Te8" secondAttribute="bottom" id="LC4-MH-wcw"/>
+                <constraint firstItem="IM6-rj-Te8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rek-9U-IEE"/>
+                <constraint firstItem="qLL-Mg-YDl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Shy-wv-BQO"/>
+                <constraint firstItem="hbe-p2-c1M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="84" id="aXE-Lk-ZY5"/>
+                <constraint firstItem="i4x-ab-uJV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hbe-p2-c1M" secondAttribute="trailing" constant="5" id="f9K-CY-wEl"/>
+                <constraint firstItem="gJ7-UQ-PEr" firstAttribute="centerY" secondItem="IM6-rj-Te8" secondAttribute="centerY" id="kJn-wG-GXK"/>
+                <constraint firstItem="i4x-ab-uJV" firstAttribute="centerY" secondItem="hbe-p2-c1M" secondAttribute="centerY" id="oUj-8d-6n4"/>
+                <constraint firstItem="hbe-p2-c1M" firstAttribute="centerY" secondItem="IM6-rj-Te8" secondAttribute="centerY" id="sGY-iS-Ql2"/>
+                <constraint firstAttribute="trailing" secondItem="qLL-Mg-YDl" secondAttribute="trailing" constant="20" id="thz-qE-ZVw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCurrentPrice" destination="i4x-ab-uJV" id="oJt-ZR-fbc"/>
+                <outlet property="btnSort" destination="IM6-rj-Te8" id="mO5-ka-YFP"/>
+                <outlet property="btnUpAndDown" destination="qLL-Mg-YDl" id="wI5-ta-bsa"/>
+                <outlet property="imageSortIndicator" destination="gJ7-UQ-PEr" id="j6Z-Sv-BKe"/>
+                <outlet property="imageUpAndDownIndicator" destination="O8d-Yf-K2z" id="hDZ-Tf-VSD"/>
+                <outlet property="morenBtn" destination="hbe-p2-c1M" id="6jE-7i-gcx"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filterdown.png" width="6" height="4"/>
+        <image name="unsort.png" width="6" height="10"/>
+    </resources>
+</document>

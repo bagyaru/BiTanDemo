@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="siL-tL-Pt3" customClass="BTICOFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-eg-cd1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相关截图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcO-C3-WxV" customClass="BTLabel">
+                            <rect key="frame" x="15" y="15" width="65.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fixText" value="xiangguanjietu"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KcO-C3-WxV" firstAttribute="leading" secondItem="xW3-eg-cd1" secondAttribute="leading" constant="15" id="0sT-ik-cAS"/>
+                        <constraint firstItem="KcO-C3-WxV" firstAttribute="top" secondItem="xW3-eg-cd1" secondAttribute="top" constant="15" id="5N6-JM-Yrb"/>
+                        <constraint firstAttribute="height" constant="55" id="InL-5a-GVI"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9u-xq-UDF">
+                    <rect key="frame" x="0.0" y="55" width="375" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="Coo-OQ-CJa"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxn-pj-6Jk">
+                    <rect key="frame" x="0.0" y="245" width="375" height="62"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他相关链接" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcu-Zd-Szb" customClass="BTLabel">
+                            <rect key="frame" x="15" y="21.5" width="98" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fixText" value="qitalink"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="Q8H-5C-kwV"/>
+                        <constraint firstItem="Jcu-Zd-Szb" firstAttribute="centerY" secondItem="Yxn-pj-6Jk" secondAttribute="centerY" id="jwr-uw-BxX"/>
+                        <constraint firstItem="Jcu-Zd-Szb" firstAttribute="leading" secondItem="Yxn-pj-6Jk" secondAttribute="leading" constant="15" id="mE9-f4-6MG"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fq9-Yd-zRq">
+                    <rect key="frame" x="0.0" y="307" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="BFM-ae-Lbr"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Yxn-pj-6Jk" secondAttribute="trailing" id="2hW-mk-hbI"/>
+                <constraint firstItem="xW3-eg-cd1" firstAttribute="leading" secondItem="siL-tL-Pt3" secondAttribute="leading" id="5FJ-aN-ht0"/>
+                <constraint firstAttribute="trailing" secondItem="Fq9-Yd-zRq" secondAttribute="trailing" id="5mJ-S5-66J"/>
+                <constraint firstAttribute="trailing" secondItem="xW3-eg-cd1" secondAttribute="trailing" id="ANW-sh-1n0"/>
+                <constraint firstItem="Yxn-pj-6Jk" firstAttribute="top" secondItem="siL-tL-Pt3" secondAttribute="top" constant="245" id="FlB-Yu-YVG"/>
+                <constraint firstItem="xW3-eg-cd1" firstAttribute="top" secondItem="siL-tL-Pt3" secondAttribute="top" id="NML-mu-voj"/>
+                <constraint firstAttribute="trailing" secondItem="l9u-xq-UDF" secondAttribute="trailing" id="PpY-rg-WOp"/>
+                <constraint firstItem="l9u-xq-UDF" firstAttribute="top" secondItem="xW3-eg-cd1" secondAttribute="bottom" id="SUO-w8-erd"/>
+                <constraint firstItem="Fq9-Yd-zRq" firstAttribute="top" secondItem="Yxn-pj-6Jk" secondAttribute="bottom" id="byZ-YQ-M6x"/>
+                <constraint firstItem="l9u-xq-UDF" firstAttribute="leading" secondItem="siL-tL-Pt3" secondAttribute="leading" id="k70-fM-tUe"/>
+                <constraint firstItem="Fq9-Yd-zRq" firstAttribute="leading" secondItem="siL-tL-Pt3" secondAttribute="leading" id="rBm-60-nOT"/>
+                <constraint firstItem="Yxn-pj-6Jk" firstAttribute="leading" secondItem="siL-tL-Pt3" secondAttribute="leading" id="sv3-ZR-31o"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="linkHeaderView" destination="Yxn-pj-6Jk" id="fHJ-em-vjP"/>
+                <outlet property="linkScrollView" destination="Fq9-Yd-zRq" id="kHv-qo-nLF"/>
+                <outlet property="linkTopCons" destination="FlB-Yu-YVG" id="sNI-pu-RTf"/>
+                <outlet property="photoHeaderView" destination="xW3-eg-cd1" id="8OQ-5f-C6j"/>
+                <outlet property="photoScrollView" destination="l9u-xq-UDF" id="XjG-OZ-Pn3"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="0.0"/>
+        </view>
+    </objects>
+</document>

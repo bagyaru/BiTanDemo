@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BTExceptionalCeilingView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您今天的打赏次数已达上限5次" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-GA-IdJ" customClass="BTLabel">
+                    <rect key="frame" x="15" y="35" width="270" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localText" value="dashangshangxian"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jh-S2-luD">
+                    <rect key="frame" x="0.0" y="74.5" width="300" height="0.5"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="7Kd-Xa-a7k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gND-rG-Xxz" customClass="BTButton">
+                    <rect key="frame" x="0.0" y="75" width="300" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.19837239583333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localTitle" value="wozhidaol"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="zhidaolBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qs9-FS-VXL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="evZ-GA-IdJ" secondAttribute="trailing" constant="15" id="IE3-8P-whp"/>
+                <constraint firstItem="gND-rG-Xxz" firstAttribute="top" secondItem="9jh-S2-luD" secondAttribute="bottom" id="WSz-PF-ule"/>
+                <constraint firstAttribute="trailing" secondItem="gND-rG-Xxz" secondAttribute="trailing" id="a3i-lx-OAy"/>
+                <constraint firstItem="9jh-S2-luD" firstAttribute="top" secondItem="evZ-GA-IdJ" secondAttribute="bottom" constant="20" id="ady-eN-UQr"/>
+                <constraint firstAttribute="bottom" secondItem="gND-rG-Xxz" secondAttribute="bottom" id="jQA-vn-I3b"/>
+                <constraint firstAttribute="trailing" secondItem="9jh-S2-luD" secondAttribute="trailing" id="ptL-us-SzC"/>
+                <constraint firstItem="evZ-GA-IdJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="qYT-ov-PRq"/>
+                <constraint firstItem="9jh-S2-luD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qn1-aK-jsv"/>
+                <constraint firstItem="gND-rG-Xxz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qyq-pI-xfP"/>
+                <constraint firstAttribute="bottom" secondItem="9jh-S2-luD" secondAttribute="bottom" constant="45" id="t1T-W5-f5K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

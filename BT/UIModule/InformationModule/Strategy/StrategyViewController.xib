@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StrategyViewController">
+            <connections>
+                <outlet property="lineView" destination="mYc-K2-E7H" id="fYT-Mi-BzN"/>
+                <outlet property="scrollView" destination="eWV-Y5-868" id="KDp-cm-MBy"/>
+                <outlet property="tableView" destination="1lc-zH-pQj" id="WoB-AW-kbt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-Y5-868">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="80K-hU-9v4"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYc-K2-E7H">
+                    <rect key="frame" x="0.0" y="40" width="320" height="0.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="9vW-3j-hVJ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="1lc-zH-pQj">
+                    <rect key="frame" x="0.0" y="40.5" width="320" height="527.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rxo-ss-Qyt"/>
+                        <outlet property="delegate" destination="-1" id="39o-in-BAb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1lc-zH-pQj" firstAttribute="top" secondItem="mYc-K2-E7H" secondAttribute="bottom" id="AUQ-7K-zND"/>
+                <constraint firstItem="eWV-Y5-868" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BXk-7d-4vu"/>
+                <constraint firstItem="1lc-zH-pQj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fjb-Ay-83s"/>
+                <constraint firstItem="mYc-K2-E7H" firstAttribute="top" secondItem="eWV-Y5-868" secondAttribute="bottom" id="GFT-g7-EZa"/>
+                <constraint firstAttribute="trailing" secondItem="mYc-K2-E7H" secondAttribute="trailing" id="Mwi-bF-WXr"/>
+                <constraint firstAttribute="bottom" secondItem="1lc-zH-pQj" secondAttribute="bottom" id="OFR-e3-z87"/>
+                <constraint firstAttribute="trailing" secondItem="1lc-zH-pQj" secondAttribute="trailing" id="TXG-wW-AjX"/>
+                <constraint firstItem="eWV-Y5-868" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WF6-r7-Tfx"/>
+                <constraint firstItem="mYc-K2-E7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dX7-yY-4ak"/>
+                <constraint firstAttribute="trailing" secondItem="eWV-Y5-868" secondAttribute="trailing" id="fbS-FG-tAR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aw9-RV-ydN" customClass="BTCandyItemView">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="222"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSD-1m-Dof">
+                    <rect key="frame" x="0.0" y="0.0" width="237" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="9hk-hF-3Mf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="迅雷CEO陈磊：5月有望推出每秒处理百万交易的" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYP-rl-SAp">
+                    <rect key="frame" x="15" y="130" width="207" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tl5-ow-H1Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金色财经·31分钟前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qe-RK-XIM">
+                    <rect key="frame" x="15" y="180" width="103" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234浏览" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcO-5I-cZW">
+                    <rect key="frame" x="169" y="180" width="53" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oYP-rl-SAp" firstAttribute="leading" secondItem="aw9-RV-ydN" secondAttribute="leading" constant="15" id="K5m-Sr-l3W"/>
+                <constraint firstItem="zcO-5I-cZW" firstAttribute="centerY" secondItem="0Qe-RK-XIM" secondAttribute="centerY" id="OMA-ZX-66V"/>
+                <constraint firstAttribute="trailing" secondItem="zcO-5I-cZW" secondAttribute="trailing" constant="15" id="kv4-BT-Go2"/>
+                <constraint firstAttribute="trailing" secondItem="oYP-rl-SAp" secondAttribute="trailing" constant="15" id="pWT-RI-8cu"/>
+                <constraint firstItem="0Qe-RK-XIM" firstAttribute="top" secondItem="oYP-rl-SAp" secondAttribute="bottom" constant="10" id="sTU-qD-3qi"/>
+                <constraint firstItem="lSD-1m-Dof" firstAttribute="top" secondItem="aw9-RV-ydN" secondAttribute="top" id="tta-G6-Nkh"/>
+                <constraint firstAttribute="trailing" secondItem="lSD-1m-Dof" secondAttribute="trailing" id="uZM-ag-KKu"/>
+                <constraint firstItem="lSD-1m-Dof" firstAttribute="leading" secondItem="aw9-RV-ydN" secondAttribute="leading" id="up4-hP-WRd"/>
+                <constraint firstItem="0Qe-RK-XIM" firstAttribute="leading" secondItem="aw9-RV-ydN" secondAttribute="leading" constant="15" id="xWg-So-t4c"/>
+                <constraint firstItem="oYP-rl-SAp" firstAttribute="top" secondItem="lSD-1m-Dof" secondAttribute="bottom" constant="10" id="xjV-gk-tKv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconIV" destination="lSD-1m-Dof" id="Hb9-zs-FKz"/>
+                <outlet property="sourceL" destination="0Qe-RK-XIM" id="YDB-El-wlT"/>
+                <outlet property="titleL" destination="oYP-rl-SAp" id="Q27-J9-Hjx"/>
+                <outlet property="viewCountL" destination="zcO-5I-cZW" id="NUk-Mp-l1H"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="6"/>
+        </view>
+    </objects>
+</document>

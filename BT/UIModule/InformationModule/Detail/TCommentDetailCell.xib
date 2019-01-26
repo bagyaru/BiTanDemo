@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TCommentDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="af0-UH-JIG">
+                        <rect key="frame" x="12" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1by-el-IWN"/>
+                            <constraint firstAttribute="width" constant="40" id="39L-8c-MPD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brandon Thomas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kce-5f-Kpo" customClass="BTLabel">
+                        <rect key="frame" x="62" y="12" width="109" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="EFn-qN-hUx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.12549019607843137" green="0.12941176470588234" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/01/12 09:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsV-ov-TGX" customClass="BTLabel">
+                        <rect key="frame" x="62" y="32" width="99.5" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="YLk-gr-Sag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年1月17日，丹麦哥本哈根、纽约阿蒙克市-马士基集团和IBM日前宣布将组建一家合资公司，通过区块链技术为开展全球贸易提供更为高效、安全的方式。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaK-xF-ahX" customClass="BTLabel">
+                        <rect key="frame" x="12" y="64" width="296" height="43"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" red="0.12549019607843137" green="0.12941176470588234" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DV-Ef-HRU">
+                        <rect key="frame" x="0.0" y="119" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="M0F-lK-aCq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="af0-UH-JIG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="A44-mw-iW8"/>
+                    <constraint firstAttribute="trailing" secondItem="6DV-Ef-HRU" secondAttribute="trailing" id="MjM-0e-cqL"/>
+                    <constraint firstAttribute="bottom" secondItem="6DV-Ef-HRU" secondAttribute="bottom" id="OPo-lv-ZTy"/>
+                    <constraint firstItem="yaK-xF-ahX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="OSl-bc-Jaf"/>
+                    <constraint firstItem="kce-5f-Kpo" firstAttribute="leading" secondItem="af0-UH-JIG" secondAttribute="trailing" constant="10" id="YDL-eu-iNX"/>
+                    <constraint firstItem="PsV-ov-TGX" firstAttribute="leading" secondItem="af0-UH-JIG" secondAttribute="trailing" constant="10" id="aDO-Q2-5gx"/>
+                    <constraint firstItem="af0-UH-JIG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="dXE-eZ-6A0"/>
+                    <constraint firstItem="PsV-ov-TGX" firstAttribute="top" secondItem="kce-5f-Kpo" secondAttribute="bottom" constant="5" id="f2O-b9-191"/>
+                    <constraint firstItem="6DV-Ef-HRU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fNY-Bi-5BO"/>
+                    <constraint firstItem="kce-5f-Kpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="jqC-rv-UmO"/>
+                    <constraint firstAttribute="trailing" secondItem="yaK-xF-ahX" secondAttribute="trailing" constant="12" id="kIn-xd-B84"/>
+                    <constraint firstItem="yaK-xF-ahX" firstAttribute="top" secondItem="af0-UH-JIG" secondAttribute="bottom" constant="14" id="uJy-JZ-GSj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentL" destination="yaK-xF-ahX" id="eSX-t8-1oz"/>
+                <outlet property="iconIV" destination="af0-UH-JIG" id="bAl-To-FQp"/>
+                <outlet property="nameL" destination="kce-5f-Kpo" id="I3k-rJ-jDg"/>
+                <outlet property="timeL" destination="PsV-ov-TGX" id="lG0-Ab-A8v"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

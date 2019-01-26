@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XHFootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="暂无消息" translatesAutoresizingMaskIntoConstraints="NO" id="gzW-IT-1JS">
+                    <rect key="frame" x="100" y="30" width="120" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="oRi-Sp-VPq"/>
+                        <constraint firstAttribute="height" constant="111" id="uoI-wC-9Pd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无相关数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0s-8r-IW5">
+                    <rect key="frame" x="123" y="171" width="74" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="QUZ-Vo-B3b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u0s-8r-IW5" firstAttribute="top" secondItem="gzW-IT-1JS" secondAttribute="bottom" constant="30" id="2bm-xv-clL"/>
+                <constraint firstItem="gzW-IT-1JS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="egj-7i-FNo"/>
+                <constraint firstItem="gzW-IT-1JS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h12-Nz-ssL"/>
+                <constraint firstItem="u0s-8r-IW5" firstAttribute="centerX" secondItem="gzW-IT-1JS" secondAttribute="centerX" id="juS-Qi-T3k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="暂无消息" width="120" height="111"/>
+    </resources>
+</document>

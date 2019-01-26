@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="QiHuoDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格限制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J62-nl-qgg">
+                        <rect key="frame" x="15" y="43" width="49.5" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Bnl-Jo-GsN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bq-XB-9sK">
+                        <rect key="frame" x="92.5" y="7" width="212.5" height="87.5"/>
+                        <string key="text">当前月份合约不超过1000手，其余月份
+单个月份合约不超过5000手，
+且所有月份合约总数不超过5000手</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.070588235294117646" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0bq-XB-9sK" secondAttribute="bottom" constant="7" id="6Wk-se-Sjy"/>
+                    <constraint firstItem="J62-nl-qgg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9oN-eM-rtf"/>
+                    <constraint firstItem="0bq-XB-9sK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="ESJ-Sb-Bmw"/>
+                    <constraint firstAttribute="trailing" secondItem="0bq-XB-9sK" secondAttribute="trailing" constant="15" id="HFT-fB-7Gc"/>
+                    <constraint firstItem="0bq-XB-9sK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YPJ-Qt-uMX"/>
+                    <constraint firstItem="0bq-XB-9sK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J62-nl-qgg" secondAttribute="trailing" constant="20" id="mv5-vS-R8n"/>
+                    <constraint firstItem="J62-nl-qgg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xww-86-tty"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentL" destination="0bq-XB-9sK" id="9pK-kU-Zsv"/>
+                <outlet property="titleL" destination="J62-nl-qgg" id="sLg-ge-2GI"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="55"/>
+        </tableViewCell>
+    </objects>
+</document>
